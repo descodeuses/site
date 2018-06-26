@@ -25,3 +25,14 @@ form h2{
 .ambition div{
     background-color: aquamarine;
 }
+.photo-fondateurs{
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.photo-fondateurs img{
+    height: 100px;
+    width: 100px;
+}
