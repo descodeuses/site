@@ -31,8 +31,18 @@ form h2{
     background-color: aliceblue;
     border-radius: 50px;
     overflow: hidden;
+    text-align: center;
 }
 .photo-fondateurs img{
-    height: 100px;
     width: 100px;
+}
+.equipe h2{
+    font-size: 20px;
+}
+.equipe p{
+    font-size: 16px;
+}
+.profil{
+    margin-right: 15px;
+    background-color: rgb(247, 132, 132);
 }
