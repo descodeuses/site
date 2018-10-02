@@ -1,0 +1,60 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    padding-bottom: 30px;
+}
+
+header{
+    padding: 50px;
+    color: #5E5E5E;
+}
+
+h2{
+    font-size: 1em;
+}
+
+.btn, nav, .page-footer{
+    background: #00B4A5;
+}
+.page-footer{
+
+}
+.footer-copyright{
+    border-color: #077A89;
+    color: #fff;
+}
+
+form{
+    color: #5E5E5E;
+    width: 50%;
+    margin: 0 auto;
+}
+textarea{
+    height: 50px;
+}
+
+.about h2{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.about ol li{
+    padding-top: 10px;
+}
+
+.join{
+    padding: 10px;
+}
+.signature{
+    font-family: 'Homemade Apple', cursive;
+}
+
+.presse{
+    padding-top: 10px;
+}
+.presse h2{
+    font-weight: bold;
+    font-size: 1.2em;
+}
