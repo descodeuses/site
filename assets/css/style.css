@@ -1,3 +1,19 @@
+#dons {
+    margin: 0;
+    padding: 0;
+    background: none;    
+    height: 26px;
+
+}
+#actions h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 2em;
+}
+main{
+    min-height: 50vh;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -9,9 +25,13 @@ nav{
     color: #077A89;
 }
 
+.copyright {
+    padding: 30px;
+}
+
 header{
     min-height: 70vh;
-    background: url("../images/parallax1.jpg");
+    /* background-image: url("../images/coaching-coders-coding-7374.jpg"); */
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -69,7 +89,7 @@ form .btn{
 
 .ambition{
     height: 40vh;
-    background: url("../images/parallax1.jpg");
+    background-image: url("../images/adolescent-adult-diversity-1034361.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -112,7 +132,7 @@ form .btn{
 .photo-fondateurs img{
     width: 100%;
 }
-.equipe h2{
+.equipe h2, .title{
     font-size: 30px;
     text-transform: uppercase;
     color: #A6ACB4;
@@ -124,7 +144,7 @@ form .btn{
 .profil{
     margin: 15px;
     background-color: #fff;
-    padding: 100px;
+    padding: 50px;
 }
 .profil span{
     color: #3CA4B6;
@@ -154,7 +174,7 @@ svg{
 }
 
 .contact{
-    background: url("../images/parallax1.jpg");
+    background: #000;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
