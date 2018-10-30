@@ -1,7 +1,18 @@
+.navbar-brand {
+  width: 300px;
+}
+
+#cover {
+    background: url("../images/femmecode-descodeuses.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 #dons {
     margin: 0;
     padding: 0;
-    background: none;    
+    background: none;
     height: 26px;
 
 }
