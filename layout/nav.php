@@ -7,7 +7,7 @@
             <div class="navbar-menu">
                 <div class="navbar-end">
                     <a href="<?= RACINE_WEB;?>index.php" class="navbar-item">Accueil</a>
-                    <a href="<?= RACINE_WEB;?>index.php#ambitions" class="navbar-item">Nos ambitions</a>
+                    <a href="<?= RACINE_WEB;?>index.php#ambitions" class="navbar-item">Notre ambition</a>
                     <a href="<?= RACINE_WEB;?>valeurs.php" class="navbar-item">Nos valeurs</a>
                     <a href="<?= RACINE_WEB;?>index.php#actions" class="navbar-item">Actions</a>
                     <a href="<?= RACINE_WEB;?>index.php#equipe" class="navbar-item">Equipe</a>

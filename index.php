@@ -13,52 +13,42 @@
                  </div>
              </div>
          </div>
-         <div class="hero-foot">
-           <div class="container">
-             <div class="column is-4 is-offset-8">
-             </div>
-           </div>
-         </div>
      </section>
-     <!-- chiffres -->
      <section class="section container is-medium">
-         <div class="section">
-             <h2 class="title has-text-centered">1,6 millions d’habitants en QPV</h2>
-              <p class="heading has-text-centered">en Île de France</p>
-         </div>
-         <div class="hero is-medium">
-             <div class="tile is-ancestor">
-                 <div class="tile is-parent">
-                     <article class="tile is-child has-text-centered">
-                         <p class="title"><i class="fas fa-male"></i> <i class="fas fa-female"></i></p>
-                         <p class="title">52%</p>
-                         <p class="heading">Femmes</p>
-                     </article>
-                 </div>
-                 <div class="tile is-parent">
-                     <article class="tile is-child has-text-centered">
-                         <p class="title"><i class="far fa-smile"></i> <i class="far fa-frown"></i></p>
-                         <p class="title">1 sur 2</p>
-                         <p class="heading">Enloignée de l'emploi</p>
-                     </article>
-                 </div>
-                 <div class="tile is-parent">
-                     <article class="tile is-child has-text-centered">
-                         <p class="title"><i class="fas fa-search"></i> <i class="fas fa-desktop"></i></p>
-                         <p class="title">191 000</p>
-                         <p class="heading">cherchent emploi</p>
-                     </article>
-                 </div>
-                 <div class="tile is-parent">
-                     <article class="tile is-child has-text-centered">
-                         <p class="title"><i class="fas fa-desktop"></i> <i class="fas fa-desktop"></i></p>
-                         <p class="title">80.000</p>
-                         <p class="heading">Postes à pourvoir dans le web</p>
-                     </article>
-                 </div>
-             </div>
-         </div>
-     </section>
+        <h2 class="title has-text-centered"></h2>
+        <div class="hero is-medium">
+            <div class="columns">
+                <div class="column">
+                    <div class="has-text-centered">
+                        <p class="title"><i class="fas fa-male"></i> <i class="fas fa-female"></i></p>
+                        <p class="title">52%</p>
+                        <p class="heading">Femmes</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="has-text-centered">
+                        <p class="title"><i class="far fa-smile"></i> <i class="far fa-frown"></i></p>
+                        <p class="title">1 sur 2</p>
+                        <p class="heading">Enloignée de l'emploi</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="has-text-centered">
+                        <p class="title"><i class="fas fa-search"></i> <i class="fas fa-desktop"></i></p>
+                        <p class="title">191 000</p>
+                        <p class="heading">cherchent emploi</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="has-text-centered">
+                        <p class="title"><i class="fas fa-desktop"></i> <i class="fas fa-desktop"></i></p>
+                        <p class="title">80.000</p>
+                        <p class="heading">Postes à pourvoir dans le web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
      <!-- ambition -->
      <section class="section hero is-info" id="ambitions">
@@ -75,42 +65,20 @@
          <h2 class="title">Nos actions</h2>
          <div class="columns">
              <div class="column is-4 has-text-centered">
-                 <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                     <defs>
-                         <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                             <image xlink:href="https://farm4.staticflickr.com/3165/5733278274_2626612c70.jpg" x="-25" width="150" height="100" />
-                         </pattern>
-                     </defs>
-                     <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
-                 </svg>
+                 <img src="assets/images/sensibilisation.png" alt="Icons sensibilisation">
                  <h2>sensibilisation</h2>
                  <p>Sensibiliser les femmes des quartiers politique de la ville aux opportunités d’emploi dans le numérique</p>
              </div>
              <div class="column is-4 has-text-centered">
-                 <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                     <defs>
-                         <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                             <image xlink:href="https://farm4.staticflickr.com/3165/5733278274_2626612c70.jpg" x="-25" width="150" height="100" />
-                         </pattern>
-                     </defs>
-                     <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
-                 </svg>
+                 <img src="assets/images/certification.png" alt="Icons certification">
                  <h2>Formation</h2>
                  <p>Former les femmes des quartiers politique de la ville aux métiers du développement web</p>
              </div>
              <div class="column is-4 has-text-centered">
-                 <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                     <defs>
-                         <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                             <image xlink:href="https://farm4.staticflickr.com/3165/5733278274_2626612c70.jpg" x="-25" width="150" height="100" />
-                         </pattern>
-                     </defs>
-                     <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
-                 </svg>
+                 <img src="assets/images/accompagnement.png" alt="Icons accompagnement">
                  <h2>Accompagnement</h2>
                  <p>Accompagner les femmes des quartiers politique de la ville jusqu’à l’emploi</p>
              </div>
-         </div>
          </div>
      </section>
 
@@ -124,12 +92,12 @@
                  </div>
                  <div>
                      <p><span>Souad <br> Boutegrabet</span></p>
-                     <p>Fondatrice, Formatrice</p>
+                     <p>Co-fondatrice</p>
                  </div>
                  <div class="rs">
                      <ul>
-                         <li><i class="fab fa-twitter"></i></li>
-                         <li><i class="fab fa-linkedin-in"></i></li>
+                         <li><a href="https://twitter.com/SouadSoR"><i class="fab fa-twitter"></i></a></li>
+                         <li><a href="https://www.linkedin.com/in/souad-boutegrabet-8772818a/"><i class="fab fa-linkedin-in"></i></a> </li>
                      </ul>
                  </div>
              </div>
@@ -140,42 +108,27 @@
                  <div>
                      <p><span>Michelson <br>
                          Novaes Santos Nantier</span></p>
-                     <p>Président, Formateur</p>
+                     <p>Co-fondateurs</p>
                  </div>
                  <div class="rs">
                      <ul>
-                         <li><i class="fab fa-twitter"></i></li>
-                         <li><i class="fab fa-linkedin-in"></i></li>
+                         <li><a href="https://twitter.com/meuladopunk"><i class="fab fa-twitter"></i></a></li>
+                         <li><a href="https://www.linkedin.com/in/michelsonhns/"><i class="fab fa-linkedin-in"></i></a> </li>
                      </ul>
                  </div>
              </div>
              <div class="column is-3 profil is-offset-1 center-align">
                  <div class="photo-fondateurs">
-                     <img src="assets/images/siluette.png" alt="photo Jessy">
-                 </div>
-                 <div>
-                     <p><span>Jessy</span></p>
-                     <p>Community manager</p>
-                 </div>
-                 <div class="rs">
-                     <ul>
-                         <li><i class="fab fa-twitter"></i></li>
-                         <li><i class="fab fa-linkedin-in"></i></li>
-                     </ul>
-                 </div>
-             </div>
-             <div class="column is-3 profil center-align">
-                 <div class="photo-fondateurs">
                      <img src="assets/images/siluette.png" alt="photo Emeline">
                  </div>
                  <div>
-                     <p><span>Emeline</span></p>
-                     <p>Designer</p>
+                     <p><span>Emeline <br>
+                         Ancel-Pirouelle</span></p>
+                     <p>Graphiste</p>
                  </div>
                  <div class="rs">
                      <ul>
-                         <li><i class="fab fa-twitter"></i></li>
-                         <li><i class="fab fa-linkedin-in"></i></li>
+                         <li><a href="https://www.behance.net/emelineap"><i class="fab fa-behance"></i></a></li>
                      </ul>
                  </div>
              </div>
@@ -184,13 +137,30 @@
                      <img src="assets/images/siluette.png" alt="photo Haythem">
                  </div>
                  <div>
-                     <p><span>Haythem</span></p>
-                     <p>Bénévole</p>
+                     <p><span>Haythem <br>
+                         Ben Abdallah
+                     </span></p>
+                     <p>Dévéloppeur</p>
                  </div>
                  <div class="rs">
                      <ul>
-                         <li><i class="fab fa-twitter"></i></li>
-                         <li><i class="fab fa-linkedin-in"></i></li>
+                         <li><a href="https://www.linkedin.com/in/haythem-ben-abdallah-11314584/"><i class="fab fa-linkedin-in"></i></a></li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="column is-3 profil center-align">
+                 <div class="photo-fondateurs">
+                     <img src="assets/images/siluette.png" alt="photo Jessy">
+                 </div>
+                 <div>
+                     <p><span>Salima <br>
+                         Benaissaoui</span></p>
+                     <p>Trésorière</p>
+                 </div>
+                 <div class="rs">
+                     <ul>
+                         <li><a href="https://twitter.com/SalimaBena"><i class="fab fa-twitter"></i></a></li>
+                         <li><a href="https://www.linkedin.com/in/salima-benaissaoui-8a257897/"><i class="fab fa-linkedin-in"></i></a></li>
                      </ul>
                  </div>
              </div>

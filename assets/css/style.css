@@ -22,6 +22,10 @@
     font-size: 1em;
     line-height: 2em;
 }
+
+#actions img {
+    width: 200px;
+}
 main{
     min-height: 50vh;
 }
