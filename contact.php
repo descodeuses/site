@@ -27,7 +27,7 @@
               <p>Super !</p>
             </div>
             <div class=\"message-body\">
-              Merci pour votre contact! Je ne tarderais pas à vous répondre, promis!
+              Merci pour votre contact! On ne tarderait pas à vous répondre, promis!
             </div>
           </article>
        </div>

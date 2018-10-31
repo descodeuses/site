@@ -1,3 +1,12 @@
+.valeurs span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.valeurs p {
+    padding-top: 30px;
+}
+
 .navbar-brand {
   width: 300px;
 }
@@ -15,12 +24,6 @@
     background: none;
     height: 26px;
 
-}
-#actions h2{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 2em;
 }
 
 #actions img {
@@ -95,13 +98,10 @@ form .btn{
 .numbers{
     padding: 100px;
 }
-.numbers h2{
-    color: #00A4B4;
-}
-.numbers p{
-    padding: 20px;
-}
 
+.numbers img {
+    width: 150px;
+}
 .ambition{
     height: 40vh;
     background-image: url("../images/adolescent-adult-diversity-1034361.jpg");
@@ -148,7 +148,7 @@ form .btn{
     width: 100%;
 }
 .equipe h2, .title{
-    font-size: 30px;
+    font-size: 2em;
     text-transform: uppercase;
     color: #A6ACB4;
 }
@@ -219,4 +219,23 @@ svg{
 }
 .block {
     padding: 40px;
+}
+#ambitions h2{
+    line-height: 2;
+}
+
+.title-vert {
+    color: #00A4B4;
+}
+
+.title-2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 1em;
+}
+/* RESPONSIVE */
+@media screen and (max-device-width: 800px) {
+    .equipe h2, .title{
+        font-size: 1.2em;
+    }
 }
