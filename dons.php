@@ -7,7 +7,7 @@
      <section class="hero section is-info is-medium">
          <div class="container has-text-centered">
              <h1 class="title">Dons</h1>
-             <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+             <p class="subtitle">Si vous souhaitez faire un don à DesCodeuses.</p>
          </div>
      </section>
      <section class="section">
@@ -30,14 +30,14 @@
                              <tr>
                                  <td>DesCodeuses</td>
                                  <td>37 Rue du télégraphe, 75020</td>
-                                 <td>XXXXX</td>
-                                 <td>XXXXXXXXXX</td>
-                                 <td>XXXXXXXXXX</td>
-                                 <td>XX</td>
+                                 <td>10107</td>
+                                 <td>00651</td>
+                                 <td>00622048380</td>
+                                 <td>20</td>
                              </tr>
                          </tbody>
                      </table>
-                     <p>IBAN XXXXXX XXXXXX XXXXX XXXX</p>
+                     <p>IBAN FR76 1010 7006 5100 6220 4838 020</p>
                  </div>
                  <div class="column is-4 has-text-centered">
                      <h2 class="title has-text-centered">PaylPal & Carte</h2>
