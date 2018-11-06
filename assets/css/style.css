@@ -1,3 +1,17 @@
+.title2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+#politique p {
+    padding: 1em 0;
+}
+
+#politique span {
+    font-weight: bold;
+}
 .valeurs span {
     text-transform: uppercase;
     font-weight: bold;
