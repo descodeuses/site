@@ -60,10 +60,10 @@
     </section>
 
     <!-- ambition -->
-    <section class="section hero is-medium is-danger" id="ambitions">
+    <section class="section hero is-medium logoyellow back has-text-white" id="ambitions">
         <div class="columns">
             <div class="column is-8 is-offset-2">
-                <h2 class="title">notre ambition : être un acteur majeur de l’accompagnement des femmes des quartiers politique de la ville, à intégrer le numérique.</h2>
+                <h2 class="title has-text-white">notre ambition : être un acteur majeur de l’accompagnement des femmes des quartiers politique de la ville, à intégrer le numérique.</h2>
                 <p class="has-text-right"><span>DesCodeuses</span></p>
             </div>
         </div>

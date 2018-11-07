@@ -24,6 +24,13 @@
 .navbar-brand {
   width: 300px;
 }
+/* .logoyellow {
+    color: #FAB330;
+} */
+
+.logoyellow.back {
+    background: #0FA3B1;
+}
 
 #cover {
     background: url("../images/femmecode-descodeuses.jpg");
@@ -235,7 +242,8 @@ svg{
     padding: 40px;
 }
 #ambitions h2{
-    line-height: 2;
+    line-height: 1.5;
+    font-size: 1.2em;
 }
 
 .title-vert {
@@ -252,4 +260,8 @@ svg{
     .equipe h2, .title{
         font-size: 1.2em;
     }
+}
+
+.heading {
+    font-size: 1em;
 }
