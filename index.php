@@ -127,7 +127,7 @@
             </div>
             <div class="column is-3 profil is-offset-1 center-align">
                 <div class="photo-fondateurs">
-                    <img src="assets/images/siluette.png" alt="photo Emeline">
+                    <img src="assets/images/emeline.jpeg" alt="photo Emeline">
                 </div>
                 <div>
                     <p><span>Emeline <br>
