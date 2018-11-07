@@ -12,8 +12,8 @@
         <meta property="og:title" content="DesCodeuses: les femmes codent !"/>
         <meta property="og:type" content="website" >
         <meta property="og:url" content="https://www.descodeuses.org" />
-        <meta property="og:image" content="http://www.descodeuses.org/assets/images/descodeuses.jpeg"/>
-        <meta property="og:description" content="Association dont l’ambition est de favoriser l’inclusion des femmes dans le secteur informatique, et ce par la formation, la vulgarisation et la communication.">
+        <meta property="og:image" content="http://www.descodeuses.org/assets/images/3womencoding.jpg"/>
+        <meta property="og:description" content="DesCodeuses est une startup sociale, issue des quartiers populaires. La mission de DesCodeuses est d'accompagner les femmes issues des Quartiers Politique de la Ville vers l'emploi numérique, grâce à un parcours d'accompagnement innovant et d'une pédagogie adaptée. Formées au métier du développement web, en école et en stage, les apprenantes bénéficient d'un parcours en 4 étapes, de l'accompagnement social jusqu'au retour à l'emploi.">
         <meta property="og:site_name" content="DesCodeuses: les femmes codent !">
 
         <!-- fontawesome -->
