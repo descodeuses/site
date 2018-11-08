@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Descodeuses</title>
 
-        <meta name="description" content="Association dont l’ambition est de favoriser l’inclusion des femmes dans le secteur informatique, et ce par la formation, la vulgarisation et la communication." />
+        <meta name="description" content="DesCodeuses est une startup sociale, issue des quartiers populaires. La mission de DesCodeuses est d'accompagner les femmes issues des Quartiers Politique de la Ville vers l'emploi numérique, grâce à un parcours d'accompagnement innovant et une pédagogie adaptée. Formées au métier du développement web, en école et en stage, les apprenantes bénéficient d'un parcours en 4 étapes, de l'accompagnement social jusqu'au retour à l'emploi." />
         <meta name="Keywords" content="Ecole de code, développement web, siteweb, développeuse, développeur, html, css, language web">
         <meta name="Identifier-Url" content="www.descodeuses.org">
         <meta name="Category" content="internet">

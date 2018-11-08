@@ -25,7 +25,7 @@ else
   echo "Erreur lors de l'envoi... Essayez encore une fois, svp! ;)";
 ?>
 <main>
-    
+
 </main>
 <?php
  include __DIR__ . '/layout/footer.php';

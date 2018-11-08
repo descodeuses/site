@@ -20,9 +20,9 @@
      <section class="section container is-medium numbers">
          <div class="hero is-medium">
             <div class="section has-text-centered">
-                <h2 class="title title-vert "> 1.6mi personnes</h2>
+                <h2 class="title title-vert "> 1.6 millions de personnes</h2>
                 <p class="heading">en ile de france</p>
-                <p><strong>Vivent dans les Quartiers Politiques de la ville</strong></p>
+                <p><strong>Vivent dans les Quartiers Politique de la Ville</strong></p>
             </div>
             <div class="columns">
                 <div class="column">
@@ -36,14 +36,14 @@
                     <div class="has-text-centered">
                         <img src="assets/images/deuxfemmes2.png" alt="Icon poste à pouvoir">
                         <h2 class="title title-vert ">1 sur 2</h2>
-                        <p class="heading">Enloignée de l'emploi</p>
+                        <p class="heading">Eloignée de l'emploi</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="has-text-centered">
                         <img src="assets/images/loupeordinateur2.png" alt="Icon poste à pouvoir">
                         <h2 class="title title-vert ">191 000</h2>
-                        <p class="heading">cherchent emploi</p>
+                        <p class="heading">cherchent un emploi</p>
                     </div>
                 </div>
                 <div class="column">
@@ -115,7 +115,7 @@
                  <div>
                      <p><span>Michelson <br>
                          Novaes Santos Nantier</span></p>
-                     <p>Co-fondateurs</p>
+                     <p>Co-fondateur</p>
                  </div>
                  <div class="rs">
                      <ul>

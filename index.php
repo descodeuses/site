@@ -24,7 +24,7 @@
            <div class="section has-text-centered">
                <h2 class="title title-vert "> 1.6 millions de personnes</h2>
                <p class="heading">en ile de france</p>
-               <p class="heading"><strong>Vivent dans les Quartiers Politiques de la ville</strong></p>
+               <p class="heading"><strong>Vivent dans les Quartiers Politique de la Ville</strong></p>
            </div>
            <div class="columns">
                <div class="column is-3">
@@ -52,7 +52,7 @@
                    <div class="has-text-centered">
                        <img src="assets/images/femmeordi2.png" alt="Icon poste à pouvoir">
                        <h2 class="title title-vert ">80.000</h2>
-                       <p class="heading">Postes à pourvoir dans le web</p>
+                       <p class="heading">Postes à pourvoir dans le numérique</p>
                    </div>
                </div>
            </div>
