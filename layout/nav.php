@@ -12,7 +12,9 @@
                     <a href="<?= RACINE_WEB;?>index.php#actions" class="navbar-item">Actions</a>
                     <a href="<?= RACINE_WEB;?>index.php#equipe" class="navbar-item">Equipe</a>
                     <a href="<?= RACINE_WEB;?>index.php#contact" class="navbar-item">Contact</a>
-                    <a class="navbar-item button is-info" href="https://www.helloasso.com/associations/descodeuses/formulaires/1" target="_blank">faire un don</a>
+                    <div class="navbar-item">
+                      <a class="button is-info" href="https://www.helloasso.com/associations/descodeuses/formulaires/1" target="_blank">FAIRE UN DON</a>
+                    </div>
                 </div>
             </div>
         </div>
