@@ -7,7 +7,7 @@
      <section class="hero section is-info is-medium">
          <div class="container has-text-centered">
              <h1 class="title">Dons</h1>
-             <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+             <p class="subtitle">Si vous souhaitez faire un don à DesCodeuses.</p>
          </div>
      </section>
      <section class="section">
@@ -30,23 +30,18 @@
                              <tr>
                                  <td>DesCodeuses</td>
                                  <td>37 Rue du télégraphe, 75020</td>
-                                 <td>XXXXX</td>
-                                 <td>XXXXXXXXXX</td>
-                                 <td>XXXXXXXXXX</td>
-                                 <td>XX</td>
+                                 <td>10107</td>
+                                 <td>00651</td>
+                                 <td>00622048380</td>
+                                 <td>20</td>
                              </tr>
                          </tbody>
                      </table>
-                     <p>IBAN XXXXXX XXXXXX XXXXX XXXX</p>
+                     <p>IBAN FR76 1010 7006 5100 6220 4838 020</p>
                  </div>
                  <div class="column is-4 has-text-centered">
-                     <h2 class="title has-text-centered">PaylPal & Carte</h2>
-                     <form id="dons" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="WMUPLQ8NWYNTU">
-                        <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-                    </form>
+                     <h2 class="title has-text-centered">Par carte bancaire</h2>
+                     <a href="https://www.helloasso.com/associations/descodeuses/formulaires/1" target="_blank" class="button is-uppercase is-info">faire un don</a>
 
                  </div>
              </div>
