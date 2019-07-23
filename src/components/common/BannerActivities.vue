@@ -1,7 +1,6 @@
 <template>
     <div class="teal white-text">
         <div class="row">
-            <h2>Descodeuses</h2>
             <div class="col m4 offset-m1">
                 <h2><i class="material-icons left">favorite</i>Suscite des vocations dans le numérique</h2>
                 <p class="left-align">Animation d’ateliers pratiques « EllesCodent », programme de sensibilisation à la programmation à destination des femmes.</p>
