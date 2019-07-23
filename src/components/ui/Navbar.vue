@@ -6,7 +6,7 @@ export default {
 
 <template>
 <div>
-    <h1>Descodeuses</h1>
+     <img src="@/assets/logos/logo-descodeuses.png" alt="">
     <nav >
         <div class="nav-wrapper white ">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -27,6 +27,10 @@ nav {
 ul li {
     text-transform: uppercase;
     cursor: pointer;
+}
+img {
+    width: 300px;
+    padding-top: 15px
 }
 
 </style>
