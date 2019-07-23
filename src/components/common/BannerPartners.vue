@@ -2,23 +2,22 @@
     <div class="container">
         <div class="row">
             <div class="col m2">
-                logo 1
-                <!-- <img src="~/assets/logos/laruche_logo.jpg" alt=""> -->
+                <img src="@/assets/logos/sap.png" alt="">
             </div>
             <div class="col m2">
-                logo 2
+                <img src="@/assets/logos/sap.png" alt="">
             </div>
             <div class="col m2">
-                logo 3
+                <img src="@/assets/logos/sap.png" alt="">
             </div>
             <div class="col m2">
-                logo 4
+                <img src="@/assets/logos/sap.png" alt="">
             </div>
             <div class="col m2">
-                logo 5
+                <img src="@/assets/logos/sap.png" alt="">
             </div>
             <div class="col m2">
-                logo 6
+                <img src="@/assets/logos/sap.png" alt="">
             </div>
         </div>
     </div>
@@ -26,5 +25,9 @@
 <style scoped>
 .container {
     padding: 3rem
+}
+
+.container img {
+    width: 100px;
 }
 </style>
