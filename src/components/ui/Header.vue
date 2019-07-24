@@ -14,6 +14,7 @@ header {
     background-repeat: no-repeat;
     background-size: 80%;
     background-attachment: fixed;
+    filter: grayscale(30%);
 }
 h2 {
     margin: 0;
@@ -25,7 +26,7 @@ h2 {
     background: #000;
     padding: 30px!important;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 </style>

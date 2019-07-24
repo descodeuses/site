@@ -22,6 +22,15 @@
 <style scoped>
 h2 {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 30px;
+    background-color: rgba(242, 163, 63, 0.7)
+}
+.card-panel {
+        background-image: url("./../../assets/cover_decodeuses.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center
 }
 </style>

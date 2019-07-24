@@ -29,5 +29,6 @@
 
 .container img {
     width: 100px;
+    filter: grayscale(80)
 }
 </style>
