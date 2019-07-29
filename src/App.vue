@@ -38,16 +38,11 @@ export default {
 
 <template>
     <div id="app">
-        <router-view></router-view>
+
         <Navbar/>
-        <Header/>
-        <BannerPartners/>
-        <BannerActions/>
-       
-        <BannerActivities/>
-        <BannerSchedule/>
-        <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" />
-        <CtaNewsLetter/>
+        <router-view></router-view>
+
+
         <Footer/>
     </div>
 </template>
