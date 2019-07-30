@@ -8,7 +8,7 @@
 </template>
 <style scoped>
 header {
-    min-height: 80vh;
+    height: 70vh;
     padding: 50px 0;
     background-image: url("./../../assets/cover_decodeuses.png");
     background-repeat: no-repeat;
@@ -17,6 +17,8 @@ header {
     filter: grayscale(30%);
 }
 h2 {
+
+    font-size: 20px;
     margin: 0;
     padding: 100px
 }

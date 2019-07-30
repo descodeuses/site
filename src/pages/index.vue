@@ -38,9 +38,8 @@ export default {
 
 <template>
     <div id="index">
-        <router-view></router-view>
+        <router-view/>
         <Header/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quibusdam modi ipsam, vitae exercitationem doloremque alias neque reprehenderit voluptatum atque, blanditiis ipsa maxime accusamus quis incidunt excepturi. Officia, explicabo.</p>
         <BannerPartners/>
         <BannerActions/>
         <BannerActivities/>
@@ -49,11 +48,3 @@ export default {
         <CtaNewsLetter/>
     </div>
 </template>
-
-
-<style>
-@import '~materialize-css/dist/css/materialize.min.css';
-
-
-
-</style>

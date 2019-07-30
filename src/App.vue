@@ -38,11 +38,8 @@ export default {
 
 <template>
     <div id="app">
-
         <Navbar/>
-        <router-view></router-view>
-
-
+        <router-view/>
         <Footer/>
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
-    <form class="black">
+    <form class="">
         <div class="row">
-            <div class="col m4 offset-m2 card">
+            <div class="col m4 offset-m1 card">
                 <h2>Inscrivez-vous pour recevoir la newsletter</h2>
                 <div class="input-field col s12">
                     <input id="email" type="email" class="validate">
@@ -12,16 +12,21 @@
         </div>
     </form>
 </template>
-<style>
+<style scoped>
 h2 {
     font-size: 16px !important;
     text-transform: uppercase
 }
 .card {
-    padding: 30px !important
+    padding: 40px !important
 }
-.black {
-    padding: 30px 0
+form {
+    padding: 100px 0;
+    background-image: url("./../../assets/images/photos/descodeuses-femmes-codent-07.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 100%
+
 }
 
 </style>
