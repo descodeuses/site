@@ -1,5 +1,5 @@
 <template>
-    <div class="teal white-text">
+    <div class="main white-text">
         <div class="row">
             <div class="col m4 offset-m1 left-align">
                 <h2><i class="material-icons left">favorite</i>Suscite des vocations dans le numérique.</h2>
@@ -32,8 +32,9 @@
     </div>
 </template>
 <style scoped>
-.teal {
+.main {
     padding: 30px;
+    background-color: #312783;
 }
 ul li {
     text-transform: initial;
