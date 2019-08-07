@@ -1,5 +1,5 @@
 <template>
-    <footer class="page-footer grey left-align">
+    <footer class="page-footer left-align">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -25,3 +25,8 @@
         </div>
     </footer>   
 </template>
+<style scoped>
+footer {
+    background-color: #312A6B
+}
+</style>
