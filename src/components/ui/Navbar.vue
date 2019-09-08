@@ -6,11 +6,14 @@ export default {
 
 <template>
 <div>
-     <img src="@/assets/logos/logo-descodeuses.png" alt="">
+    <a href="/">
+        <img src="@/assets/logos/logo-descodeuses.png" alt="">
+    </a>
     <nav >
         <div class="nav-wrapper white ">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="grey-text uppercase" href="association" data-target="descodeuses">Descodeuses<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="grey-text uppercase" href="inscription" data-target="descodeuses">Inscription<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class=" grey-text" href="charte" data-target="actions">Nos actions<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class=" grey-text" href="" data-target="actions">Contact <i class="material-icons right"></i></a></li>
                 <li><a class="grey-text" href="adhesion"> Adhesion<i class="material-icons right"></i></a></li>
