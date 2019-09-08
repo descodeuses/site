@@ -1,5 +1,4 @@
 <script>
-import Inscription from '@/components/forms/Inscription.vue'
 import Footer from '@/components/ui/Footer.vue'
 import Navbar from '@/components/ui/Navbar.vue'
 import Header from '@/components/ui/Header.vue'
@@ -13,7 +12,6 @@ import 'materialize-css'
 export default {
     name: 'index',
     components: {
-        Inscription,
         Footer,
         Navbar,
         Header,
@@ -44,7 +42,7 @@ export default {
         <BannerActions/>
         <BannerActivities/>
         <BannerSchedule/>
-        <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" />
+        <!-- <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" /> -->
         <CtaNewsLetter/>
     </div>
 </template>
