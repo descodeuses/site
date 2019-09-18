@@ -2,8 +2,7 @@
 <div>
     <header>
 		<div class="container">
-			<h1 class="logo">
-			</h1>
+			<h1 class="heading">Le parcours d'une descodeuse</h1>
 		</div>
 	</header>
 
@@ -72,6 +71,9 @@
 <style lang="scss" scoped>
 @import "https://fonts.googleapis.com/css?family=Dosis:300, 400, 500, 600, 700";
 
+.heading {
+	color: #fff
+}
 // Variables
 $bg-body: #f9f9f9;
 
