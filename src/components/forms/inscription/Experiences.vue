@@ -1,19 +1,19 @@
 <script>
 export default {
-     data(){
+    data(){
         return {
-          experiences: {
-              experience:'',
-              experience_code: ''
-          },
-          language: {
-              englishtext:''
-          },
-          languageLevel: {
-            french: '',
-            english:'',
-            arabic: '',
-            other: ''
+            experiences: {
+                experience:'',
+                experience_code: ''
+            },
+            language: {
+                englishtext:''
+            },
+            languageLevel: {
+                french: '',
+                english:'',
+                arabic: '',
+                other: ''
             }
         }
     },
