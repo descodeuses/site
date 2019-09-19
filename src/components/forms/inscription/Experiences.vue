@@ -104,7 +104,7 @@ export default {
                     <h2>Vos langues</h2>
                     <p class="help-text">Information demandée à titre indicatif, ce n'est pas éliminatoire, ni déterminant</p>
                     <div class="field-body">
-                        <div class="col s3">
+                        <div class="col s6">
                             <div class="control">
                                 <label for="french">
                                     <input 
@@ -147,7 +147,7 @@ export default {
                                 </label>
                             </div>
                         </div>
-                        <div class="col s3">
+                        <div class="col s6">
                             <div class="control">
                                 <label for="english">
                                     <input 
@@ -190,7 +190,7 @@ export default {
                                 </label>
                             </div>
                         </div>
-                        <div class="col s3">
+                        <div class="col s6">
                             <div class="control">
                                 <label for="arabic">
                                     <input 
