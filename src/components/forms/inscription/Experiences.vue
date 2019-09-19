@@ -3,17 +3,11 @@ export default {
     data(){
         return {
             experiences: {
-                experience:'',
-                experience_code: ''
+
             },
             language: {
-                englishtext:''
             },
             languageLevel: {
-                french: '',
-                english:'',
-                arabic: '',
-                other: ''
             }
         }
     },
@@ -62,8 +56,7 @@ export default {
                             cols="30" 
                             rows="5" 
                             class="materialize-textarea"
-                            v-model="experiences.experience_code" 
-                            value="experiences_code"></textarea>
+                            v-model="experiences.experience_code"></textarea>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                     
@@ -75,7 +68,7 @@ export default {
                             cols="30" 
                             rows="5" 
                             class="materialize-textarea"
-                            value="experiences_whycode"></textarea>
+                            v-model="experiences.experiences_whycode"></textarea>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                 </div>
@@ -83,6 +76,7 @@ export default {
                     <h2>Quel est votre dernier diplôme obtenu ? *</h2>
                     <p class="help-text">Information demandée à titre indicatif, en aucun cas discriminant !</p>
                     <input 
+                        v-model="experiences.diplome"
                         type="text" 
                         class="input" 
                         placeholder="ex. bac"
@@ -142,7 +136,8 @@ export default {
                                     <input 
                                         type="radio" 
                                         id="beginningFrench" 
-                                        v-model="languageLevel.french"/>
+                                        v-model="languageLevel.french"
+                                        value="beginningFrench"/>
                                     <span>Débutant.e </span>
                                 </label>
                             </div>
