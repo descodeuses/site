@@ -8,9 +8,11 @@ export default {
                 }
             }
         }
+    },
+    mounted() {
+        M.FormSelect.init(this.$el.querySelectorAll('select'), {})
     }
 }
-</script>
 </script>
 <template>
     <div class="col s8 offset-s2">
@@ -19,11 +21,11 @@ export default {
             <form class="">
                 <div class="row">
                     <div class="input-field col s2">
-                        <label for="first_name">Quel est votre genre ? *</label>
                         <select 
                             v-model="administration_infos.gender" 
                             name="administration_infos" 
-                            id="">
+                            id="gender">
+                            <option value="" disabled selected>Genre *</option>
                             <option value="woman">Femme</option>
                             <option value="man">Homme</option>
                             <option value="other">Autre</option>
@@ -106,12 +108,12 @@ export default {
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                     <div class="input-field col s6">
-                        <label for="email">Ville *</label>
+                        <label for="city">Ville *</label>
                         <input
-                            v-model="administration_infos.email"
+                            v-model="administration_infos.city"
                             name="administration_infos"  
-                            id="email" 
-                            type="email" 
+                            id="city" 
+                            type="text" 
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
@@ -130,7 +132,7 @@ export default {
                     <div class="input-field col s6 ">
                         <label for="email">Email *</label>
                         <input 
-                            v-model="administration_infos.birthday"
+                            v-model="administration_infos.email"
                             name="administration_infos"
                             id="email" 
                             type="email" 
@@ -181,7 +183,7 @@ export default {
                                 </label>
                             </div>
                             <div v-if="administration_infos.statut.unployed === true">
-                                <div class="field" v-if="administration_infos.statut.not_allowance === false">
+                                <div class="field">
                                     <label for="allowance_poleemploi">
                                         <input 
                                             v-model="administration_infos.statut.allowance_poleemploi"
@@ -193,7 +195,7 @@ export default {
                                         <span>Indemnisé.e par Pôle Emploi</span>
                                     </label>
                                 </div>
-                                <div class="field" v-if="administration_infos.statut.allowance_poleemploi === false">
+                                <div class="field">
                                     <label for="not_allowance">
                                         <input 
                                             v-model="administration_infos.statut.not_allowance"
