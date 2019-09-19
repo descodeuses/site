@@ -4,8 +4,11 @@ export default {
         return {
           experiences: {
               experience:'',
+              experience_code: ''
           },
-          language: {},
+          language: {
+              englishtext:''
+          },
           languageLevel: {
             french: '',
             english:'',
@@ -30,8 +33,9 @@ export default {
                             <label for="yes">
                                 <input 
                                     type="radio" 
-                                    :value="true" 
-                                    id="yes" v-model="experiences.experience" 
+                                    :value="'yes'" 
+                                    id="yes" 
+                                    v-model="experiences.experience" 
                                     name="experience"/>
                                 <span>Oui, j'ai déjà codé</span>
                             </label>
@@ -40,7 +44,7 @@ export default {
                             <label for="no">
                                 <input 
                                     type="radio" 
-                                    :value="false" 
+                                    :value="'no'" 
                                     id="no" 
                                     v-model="experiences.experience" 
                                     name="experience"/> 
@@ -50,7 +54,7 @@ export default {
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
 
-                    <div class="control" v-if="experiences.experience === true">
+                    <div class="control" v-if="experiences.experience === 'yes'">
                         <h2>Racontez-nous vos expériences</h2>
                         <textarea 
                             name="experience" 
@@ -58,11 +62,12 @@ export default {
                             cols="30" 
                             rows="5" 
                             class="materialize-textarea"
+                            v-model="experiences.experience_code" 
                             value="experiences_code"></textarea>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                     
-                    <div class="control" v-else-if="experiences.experience === false">
+                    <div class="control" v-else-if="experiences.experience === 'no'">
                         <h2>Pourquoi vouloir intégrer cette formation ?</h2>
                         <textarea  
                             name="experience"  
@@ -286,9 +291,16 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="row" v-if="language.english === true">
+                <div class="row" 
+                    v-if="language.english === true">
                     <h2>Expliquez-nous en anglais vos motivations pour participer à notre formation. *</h2>
-                    <textarea name="english" id="" cols="30" rows="10" class="materialize-textarea"></textarea>
+                    <textarea
+                        v-model="language.englishtext"
+                        name="english" 
+                        id="" 
+                        cols="30" 
+                        rows="10" 
+                        class="materialize-textarea"></textarea>
                 </div>
             </form>
         </div>
