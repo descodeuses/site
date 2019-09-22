@@ -1,3 +1,14 @@
+<script>
+export default {
+    data() {
+        return {
+            motivation: {
+
+            }
+        }
+    }
+}
+</script>
 
 <template>
     <div class="col s8 offset-s2">
@@ -17,42 +28,76 @@
                 <div class="row">
                     <div class="input-field col s12 left-align">
                         <h2>Vous avez un Github ? </h2>
-                        <input type="text" placeholder="ex. https://github.com/descodeuses" class="validate" id="github">
+                        <input 
+                            type="text"
+                            v-model="motivation.github"
+                            name="github"
+                            placeholder="ex. https://github.com/descodeuses" 
+                            class="validate" 
+                            id="github"/>
                     </div>
                 </div>
                 <div class="row left-align">
                     <h2>Racontez-nous une situation personnelle ou professionnelle durant laquelle vous avez surmonté un obstacle et de quelle manière ?</h2>
-                    <textarea name="" id="" cols="30" rows="10" class="materialize-textarea"></textarea>
+                    <textarea
+                        v-model="motivation.obstacle" 
+                        name="obstacle" 
+                        cols="30" 
+                        rows="10" 
+                        class="materialize-textarea"></textarea>
                     <p class="help-text error">Ce champs obligatoire</p>
                 </div>
                 <div class="row left-align">
                     <h2 for="">Pourquoi voulez-vous intégrer la formation DESCODEUSES ? *</h2>
                     <p class="help-text">Détaillez votre motivation avec vos mots à vous. Vous pouvez également faire une vidéo (3min max), un site simple ou tout autre chose qui montre votre envie, votre motivation et vos compétences !</p>
-                    <textarea name="" id="" cols="30" rows="10" class="materialize-textarea"></textarea>
+                    <textarea 
+                        v-model="motivation.whydescodeuses"
+                        name="whydescodeuses"
+                        cols="30" 
+                        rows="10" 
+                        class="materialize-textarea"></textarea>
                     <p class="help-text error">Ce champs obligatoire</p>
                 </div>
                 <div class="row left-align">
                     <h2 for="">Quel parcours professionnel envisagez-vous après la formation ?</h2>
-                    <textarea name="" id="" cols="30" rows="10" class="materialize-textarea"></textarea>
+                    <textarea 
+                        v-model="motivation.afterformation"
+                        name="afterformation"
+                        cols="30" 
+                        rows="10" 
+                        class="materialize-textarea"></textarea>
                     <p class="help-text error">Ce champs obligatoire</p>
                 </div>
                 <div class="row left-align">
                     <h2 for="">Décrivez le métier de codeuse - developpeuse ?</h2>
-                    <textarea name="" id="" cols="30" rows="10" class="materialize-textarea"></textarea>
+                    <textarea 
+                        v-model="motivation.developerdescription"
+                        name="developerdescription"
+                        cols="30" 
+                        rows="10" 
+                        class="materialize-textarea"></textarea>
                     <p class="help-text error">Ce champs obligatoire</p>
                 </div>
                 <div class="row left-align">
                     <div class="col s4">
                         <h2>Avez-vous un ordinateur ? *</h2>
                         <div class="control">
-                            <label for="">
-                                <input type="radio">
+                            <label>
+                                <input 
+                                    v-model="motivation.havecomputer"
+                                    name="havecomputer"
+                                    value="yes"
+                                    type="radio"/>
                                 <span>Oui</span>
                             </label>
                         </div>
                         <div class="control">
-                            <label for="">
-                                <input type="radio">
+                            <label>
+                                <input 
+                                    v-model="motivation.havecomputer"
+                                    name="havecomputer"
+                                    value="no"
+                                    type="radio">
                                 <span>Non</span>
                             </label>
                         </div>
@@ -61,14 +106,22 @@
                     <div class="col s4 left-align">
                         <h2>Avez-vous participé à un atelier d’initiation à la programmation ?</h2>
                         <div class="control">
-                            <label for="">
-                                <input type="radio">
+                            <label>
+                                <input
+                                    v-model="motivation.workshop"
+                                    name="workshop"
+                                    value="yes" 
+                                    type="radio">
                                 <span>Oui</span>
                             </label>
                         </div>
                         <div class="control">
-                            <label for="">
-                                <input type="radio">
+                            <label>
+                                <input
+                                    v-model="motivation.workshop"
+                                    name="workshop"
+                                    value="no" 
+                                    type="radio">
                                 <span>Non</span>
                             </label>
                         </div>
@@ -78,7 +131,10 @@
                         <h2>Votre CV</h2>
                         <div class="file">
                             <label class="file-label">
-                                <input class="file-input" type="file" name="resume">
+                                <input 
+                                    class="file-input" 
+                                    type="file" 
+                                    name="resume">
                             </label>
                         </div>
                         <p class="help-text error">Il est obligatoire avoir un CV</p>

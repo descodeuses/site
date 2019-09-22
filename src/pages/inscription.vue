@@ -37,9 +37,11 @@ export default {
                 <a href="informations-personnelles" class="waves-effect waves-light btn">J'accepte</a>
             </div>
         </div>
-        <PersonnalInfos/>
-        <Experiences />
-        <Motivations/>
+        <div class="container center">
+            <PersonnalInfos/>
+            <Experiences />
+            <Motivations/>
+        </div>
     </div>
 </template>
 <style scoped>
