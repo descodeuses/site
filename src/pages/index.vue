@@ -40,8 +40,6 @@ export default {
         <Header/>
         <BannerPartners/>
         <BannerActions/>
-        <BannerActivities/>
-        <BannerSchedule/>
         <!-- <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" /> -->
         <CtaNewsLetter/>
     </div>
