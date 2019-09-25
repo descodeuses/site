@@ -71,7 +71,8 @@
 <style lang="scss" scoped>
 @import "https://fonts.googleapis.com/css?family=Dosis:300, 400, 500, 600, 700";
 
-.heading {
+h1 {
+	font-size: 25px;
 	color: #fff
 }
 // Variables
