@@ -4,6 +4,11 @@ import Experiences from '@/components/forms/inscription/Experiences.vue'
 import Motivations from '@/components/forms/inscription/Motivations.vue'
 
 export default {
+    data() {
+        return {
+            component: ""
+        }
+    },
     components: {
         PersonnalInfos,
         Motivations,
@@ -34,13 +39,14 @@ export default {
             <p class="center-align">ou par e-mail: rgpd@descodeuses.org.</p>
             <br><br><br>
             <div class="center-align">
-                <a href="informations-personnelles" class="waves-effect waves-light btn">J'accepte</a>
+                <a class="waves-effect waves-light btn" @click="loadComponent('personnal-infos')">J'accepte</a>
             </div>
+            <br><br>
         </div>
         <div class="container center">
-            <PersonnalInfos/>
-            <Experiences />
-            <Motivations/>
+            <PersonnalInfos v-if="component === 'personnal-infos'"/>
+            <Experiences v-if="component === 'experiences'"/>
+            <Motivations v-if="component === 'motivations'"/>
         </div>
     </div>
 </template>
