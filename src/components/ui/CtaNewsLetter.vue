@@ -2,7 +2,7 @@
     <form class="">
         <div class="row">
             <div class="col m4 offset-m1 card">
-                <h2>Inscrivez-vous pour recevoir la newsletter</h2>
+                <h2>Inscrivez-vous pour suivre nos actualités</h2>
                 <div class="input-field col s12">
                     <input id="email" type="email" class="validate">
                     <label for="email">E-mail</label>
