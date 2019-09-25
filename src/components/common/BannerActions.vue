@@ -6,11 +6,11 @@
                     <h2 class="white-text">initier</h2>
                 </div>
                 <div class="left-align">
-                    <p class="bold">Nous proposons des ateliers de découverte et de pratique sur les thématiques suivantes:</p>
+                    <p class="bold">Nous proposons des ateliers d'initiation à la programmation et des ateliers de sensibilisation aux opportunites de la Tech</p>
                     <ul class="left-align">
-                        <li><i class="material-icons">alarm</i>Les métiers du numériques ( web developpeuse, data analyst, UX/UI)</li>
-                        <li><i class="material-icons">alarm</i>Les bases du code informatique ( langage, database)</li>
-                        <li><i class="material-icons">alarm</i>Les outils du numérique (...)</li>
+                        <li><i class="material-icons">alarm</i>Découverte de métiers du numériques</li>
+                        <li><i class="material-icons">alarm</i>Création de votre première page web</li>
+                        <li><i class="material-icons">alarm</i>Les outils de collaboration en ligne (slack, Google Drive)</li>
                     </ul>
                 </div>
             </div>
@@ -19,13 +19,12 @@
                     <h2 class="white-text">former</h2>                    
                 </div>
                 <div class="left-align">
-                    <p class="bold">Nous formons pendant 6 mois et gratuitement au métier de web développeuse:</p>
+                    <p class="bold">Nous formons pendant 6 mois au métier de developpeuse front-end</p>
                     <ul>
-                        <li><i class="material-icons">code</i>Développez vos compétences techniques ( interfaces, base de données, design...)</li>
-                        <li><i class="material-icons">code</i>Formez- vous aux méthodes agiles (lean development, stand-up meetings...)</li>
-                        <li><i class="material-icons">code</i>Apprenez les compétences transversales du numérique ( anglais technique, SEO...)</li>
+                        <li><i class="material-icons">code</i>Formez-vous aux compétences techniques front-end skills</li>
+                        <li><i class="material-icons">code</i>Formez-vous à la méthode agile</li>
+                        <li><i class="material-icons">code</i>Formez-vous aux compétences transversales</li>
                     </ul>
-                    <p>voir le programme detaillée</p>
                 </div>
             </div>
             <div class="col s12 m4">
