@@ -321,8 +321,8 @@ export default {
         </div>
         <br><br>
         <div class="center-align group-button">
-            <a href="candidature" class="waves-effect waves-light btn">Retourner</a>
-            <a href="criteres-de-candidature" class="waves-effect waves-light btn">Suivant</a>
+            <a class="waves-effect waves-light btn">Retourner</a>
+            <a class="waves-effect waves-light btn">Suivant</a>
         </div>
     </div>
 </template>
