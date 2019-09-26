@@ -4,6 +4,7 @@ import index from './pages/index.vue'
 import inscription from './pages/inscription.vue'
 import association from './pages/association.vue'
 import formations from './pages/formations.vue'
+import contact from './pages/contact.vue'
 
 
 Vue.use(Router)
@@ -30,6 +31,11 @@ export default new Router({
                 path: '/formations',
                 name: 'formations',
                 component: formations
+            },
+            {
+                path: '/contact',
+                name: 'contact',
+                component: contact
             }
         ]
     })
