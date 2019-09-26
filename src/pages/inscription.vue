@@ -39,14 +39,14 @@ export default {
             <p class="center-align">ou par e-mail: rgpd@descodeuses.org.</p>
             <br><br><br>
             <div class="center-align">
-                <a class="waves-effect waves-light btn" @click="loadComponent('personnal-infos')">J'accepte</a>
+                <a class="waves-effect waves-light btn">J'accepte</a>
             </div>
             <br><br>
         </div>
         <div class="container center">
-            <PersonnalInfos v-if="component === 'personnal-infos'"/>
-            <Experiences v-if="component === 'experiences'"/>
-            <Motivations v-if="component === 'motivations'"/>
+            <PersonnalInfos />
+            <Experiences />
+            <Motivations/>
         </div>
     </div>
 </template>
