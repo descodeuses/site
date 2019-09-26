@@ -1,5 +1,10 @@
 <script>
+import BaseButton from '@/components/elements/Button.vue'
+
 export default {
+    components:{
+        BaseButton
+    },
     data(){
         return {
             experiences: {
@@ -11,6 +16,13 @@ export default {
             }
         }
     },
+    methods: {
+        submit() {
+            this.$validator.validateAll().then(result => {
+                if (!result) return
+            })
+        }
+   }
 }
 </script>
 
@@ -19,7 +31,7 @@ export default {
         <h1 class="center-align">Critères de candidature</h1>
         <span class="help-text center-align">* les champs sont obligatoires</span>
         <div class="row">
-            <form action="">
+            <form v-on:submit.prevent v-on:submit="submit">
                 <div class="row">
                     <div class="input-field col s12">
                         <h2>Avez-vous déjà eu une expérience en programmation et/ou de manipulation de données avant ? *</h2>
@@ -27,10 +39,11 @@ export default {
                             <label for="yes">
                                 <input 
                                     type="radio" 
-                                    :value="'yes'" 
                                     id="yes" 
-                                    v-model="experiences.experience" 
-                                    name="experience"/>
+                                    v-model="experiences.code" 
+                                    name="experience"
+                                    v-validate="'required'"
+                                    />
                                 <span>Oui, j'ai déjà codé</span>
                             </label>
                         </div>
@@ -38,37 +51,40 @@ export default {
                             <label for="no">
                                 <input 
                                     type="radio" 
-                                    :value="'no'" 
                                     id="no" 
-                                    v-model="experiences.experience" 
-                                    name="experience"/> 
+                                    v-model="experiences.code" 
+                                    name="experience"
+                                    v-validate="'required'"
+                                    /> 
                                 <span> Non, aucune experience</span>
                             </label>
                         </div>
-                        <p class="help error">Ce champs obligatoire</p>
+                        <span class="helper-text" data-error="Ce champs obligatoire" data-success="right"></span>
                     </div>
 
                     <div class="control" v-if="experiences.experience === 'yes'">
                         <h2>Racontez-nous vos expériences</h2>
                         <textarea 
-                            name="experience" 
-                            id="" 
+                            name="experience_code" 
+                            id="experience_code" 
                             cols="30" 
                             rows="5" 
                             class="materialize-textarea"
-                            v-model="experiences.experience_code"></textarea>
+                            v-model="experiences.experience_code"
+                            v-validate="'required'"></textarea>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                     
                     <div class="control" v-else-if="experiences.experience === 'no'">
                         <h2>Pourquoi vouloir intégrer cette formation ?</h2>
                         <textarea  
-                            name="experience"  
-                            id="" 
+                            name="hasNoExperiences"  
+                            id="hasNoExperiences" 
                             cols="30" 
                             rows="5" 
                             class="materialize-textarea"
-                            v-model="experiences.experiences_whycode"></textarea>
+                            v-model="experiences.hasNoExperiences"
+                            v-validate="'required'"></textarea>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                 </div>
@@ -76,22 +92,25 @@ export default {
                     <h2>Quel est votre dernier diplôme obtenu ? *</h2>
                     <p class="help-text">Information demandée à titre indicatif, en aucun cas discriminant !</p>
                     <input 
-                        v-model="experiences.diplome"
+                        name="diplome"
                         type="text" 
                         class="input" 
                         placeholder="ex. bac"
-                        name="diplome"/>
+                        v-model="experiences.diplome"
+                        v-validate="'required'"/>
                     <p class="help error">Ce champs obligatoire</p>
                 </div>
                 <div class="row">
                     <h2 for="">Racontez-nous en quelques phrases votre histoire. *</h2>
                     <p class="help">Tout nous intéresse : études, travail, voyages, et autres occupations et passions.</p>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="ownHistory" 
+                        id="ownHistory" 
                         cols="30" 
                         rows="10" 
-                        class="materialize-textarea"></textarea>
+                        class="materialize-textarea"
+                        v-model="experiences.ownHistory"
+                        v-validate="'required'"></textarea>
                     <p class="help error">Ce champs obligatoire</p>
                 </div>
                 <div class="row">
@@ -107,7 +126,8 @@ export default {
                                         name="language"
                                         v-model="language.french" 
                                         value="french" 
-                                        id="french"/>
+                                        id="french"
+                                        />
                                     <span>Français</span>
                                 </label>
                             </div>
@@ -298,6 +318,14 @@ export default {
                         class="materialize-textarea"></textarea>
                 </div>
             </form>
+            <div class="center">
+                <BaseButton>
+                    precendent
+                </BaseButton>
+                <BaseButton>
+                    suivant
+                </BaseButton>
+            </div>
         </div>
     </div>
 </template>
