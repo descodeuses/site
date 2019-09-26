@@ -73,7 +73,7 @@ export default {
                 <label for="textarea1">Votre message</label>
                 <span class="helper-text" data-error="Ce champs ext obligatoire"></span>
             </div>
-            <BaseButton>Envoyer</BaseButton>
+            <BaseButton type="submit">Envoyer</BaseButton>
         </div>
     </form>
 </template>
