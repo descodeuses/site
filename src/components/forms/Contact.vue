@@ -83,7 +83,4 @@ h2, h3 {
     font-size: 1em;
     text-transform: uppercase;
 } 
-form {
-
-}
 </style>
