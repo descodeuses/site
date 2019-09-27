@@ -71,12 +71,13 @@ export default {
                 <div class="card">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/souad.jpg">
-                        <span class="card-title">Souad</span>
+                        <span class="card-title">Souad <br>
+                            Confondatrice/CEO
+                        </span>
                     </div>
                     <div class="card-content">
                         <i class="fab fa-500px"></i>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <p>Je m'assure que chaque nouveau membre comprenne notre mission, j'anime et je coordonne les différents rôles de l'équipe, j'assure les relations publiques, je recherche de nouveaux partenaires, je vais collecter des fonds, je forme les candidates sur plusieurs sujets, je suis la "problem solver" c'est à dire que je trouve des solutions à tous les problèmes !</p>
                     </div>
                     <div class="card-action">
                         <a href="#">linkedin</a>
@@ -87,11 +88,12 @@ export default {
                 <div class="card">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/michelson.jpg">
-                        <span class="card-title">Michelson</span>
+                        <span class="card-title">Michelson <br>
+                        Cofondateur/CTO
+                        </span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <p>Je suis chargé de la partie technique de Descodeuses et responsable du site web coté front.  J’anime également  des ateliers de formation</p>
                     </div>
                     <div class="card-action">
                         <a href="#">linkedin</a>
@@ -102,11 +104,12 @@ export default {
                 <div class="card">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/justine.jpg">
-                        <span class="card-title">Justine</span>
+                        <span class="card-title">Justine <br>
+                        CFO
+                        </span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <p>Je mets en place des budgets, réalise le suivi du P&L, je recherche des financements et des partenariats, je travaille également sur la stratégie de développement de DesCodeuses en France.</p>
                     </div>
                     <div class="card-action">
                         <a href="#">linkedin</a>
@@ -119,11 +122,11 @@ export default {
                 <div class="card">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/azul.jpg">
-                        <span class="card-title">Azul</span>
+                        <span class="card-title">Azul <br>
+                        Project Manager communication</span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <p>Je suis responsable de la communication sur les réseaux sociaux. Je suis toujours disponible pour repondre a vos questions et je gere le developpement de projets pour promouvoir DesCodeuses.</p>
                     </div>
                     <div class="card-action">
                         <a href="#">linkedin</a>
@@ -134,11 +137,11 @@ export default {
                 <div class="card">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/olivier.jpg">
-                        <span class="card-title">Olivier</span>
+                        <span class="card-title">Olivier <br>
+                        Project Manager Partenariats</span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <p>Je développe, gère et anime le parcours d'accompagnement à l'emploi personnalisé qui est à destination des femmes des quartiers prioritaires.</p>
                     </div>
                     <div class="card-action">
                         <a href="#">linkedin</a>
@@ -149,11 +152,11 @@ export default {
                 <div class="card">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/nolween.jpg">
-                        <span class="card-title">Nolween</span>
+                        <span class="card-title">Nolween <br>
+                        Project Manager Emploi</span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <p>J'accompagne les Apprenantes dans leur recherche de stage ou d'emploi en parallèle de leur formation. J'anime également certains des ateliers individuels ou collectifs tout au long de ce parcours. Pour nous, ce parcours est déterminant dans la réussite de notre mission : faire que chaque apprenante trouve un emploi à l'issue de la formation</p>
                     </div>
                     <div class="card-action">
                         <a href="#">linkedin</a>
@@ -195,7 +198,8 @@ ul li, ol li {
     padding: 0
 }
 .card-title {
-    background: #f9b233
+    background: #f9b233;
+    margin: 0 auto
 }
 
 .card h2 {
