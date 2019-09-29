@@ -30,44 +30,44 @@ export default {
         <h2>Contact</h2>
         <div class="row">
             <div class="input-field col s6">
-                <input 
+                <input
                     name="first_name"
-                    id="first_name" 
+                    id="first_name"
                     type="text"
-                    v-model="contact.first_name" 
+                    v-model="contact.first_name"
                     v-validate="{ required: true, regex: regexName}"
                     :class="{invalid: errors.has('first_name')}">
                 <label for="prenom">Prénom</label>
                 <span class="helper-text" data-error="Ce champs ext obligatoire"></span>
             </div>
             <div class="input-field col s6">
-                <input 
+                <input
                     name="lastname"
-                    id="lastname" 
-                    type="text" 
-                    v-model="contact.lastname" 
+                    id="lastname"
+                    type="text"
+                    v-model="contact.lastname"
                     v-validate="{ required: true, regex: regexName}"
                     :class="{invalid: errors.has('lastname')}">
                 <label for="nom">Nom</label>
                 <span class="helper-text" data-error="Ce champs ext obligatoire"></span>
             </div>
             <div class="input-field col s12">
-                <input 
+                <input
                     name="email"
-                    id="email" 
-                    type="email" 
-                    v-model="contact.email" 
+                    id="email"
+                    type="email"
+                    v-model="contact.email"
                     v-validate="'required|email'"
                     :class="{invalid: errors.has('email')}">
                 <label for="email">E-mail</label>
                 <span class="helper-text" data-error="Ce champs ext obligatoire"></span>
             </div>
             <div class="input-field col s12">
-                <textarea 
+                <textarea
                     name="message"
-                    id="message" 
+                    id="message"
                     class="materialize-textarea"
-                    v-model="contact.message" 
+                    v-model="contact.message"
                     v-validate="'required'"
                     :class="{invalid: errors.has('message')}"></textarea>
                 <label for="textarea1">Votre message</label>
@@ -82,5 +82,5 @@ export default {
 h2, h3 {
     font-size: 1em;
     text-transform: uppercase;
-} 
+}
 </style>

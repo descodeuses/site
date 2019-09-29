@@ -3,15 +3,18 @@ export default {
     data() {
         return {
             administration_infos: {
-                statut: {
-
-                }
-            }
+				statut: {}
+			}
         }
-    },
-    mounted() {
-        M.FormSelect.init(this.$el.querySelectorAll('select'), {})
-    }
+	},
+	methods: {
+		validate() {
+			this.$validator.validateAll().then(result => {
+				if (!result) return
+				this.$emit('nextStep')
+			})
+		}
+	}
 }
 </script>
 <template>
@@ -21,9 +24,9 @@ export default {
             <form class="">
                 <div class="row">
                     <div class="input-field col s2">
-                        <select 
-                            v-model="administration_infos.gender" 
-                            name="administration_infos" 
+                        <select
+                            v-model="administration_infos.gender"
+                            name="gender"
                             id="gender">
                             <option value="" disabled selected>Genre *</option>
                             <option value="woman">Femme</option>
@@ -34,20 +37,20 @@ export default {
                     <div class="input-field col s5">
                         <label for="first_name">Prénom *</label>
                         <input
-                            v-model="administration_infos.first_name"  
+                            v-model="administration_infos.first_name"
                             name="administration_infos"
-                            id="first_name" 
-                            type="text" 
+                            id="first_name"
+                            type="text"
                             class="input"/>
                         <p class="help-text error">Ce champs obligatoire</p>
                     </div>
                     <div class="input-field col s5">
                         <label for="last_name">Nom *</label>
-                        <input 
-                            v-model="administration_infos.last_name" 
+                        <input
+                            v-model="administration_infos.last_name"
                             name="administration_infos"
-                            id="last_name" 
-                            type="text" 
+                            id="last_name"
+                            type="text"
                             class="input"/>
                         <p class="help-text error">Ce champs obligatoire</p>
                     </div>
@@ -58,19 +61,19 @@ export default {
                         <input
                             v-model="administration_infos.birthday"
                             name="administration_infos"
-                            id="birthday" 
-                            type="text" 
+                            id="birthday"
+                            type="text"
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                     <div class="input-field col s6">
                         <label for="nationality">Nationalité *</label>
-                        <input 
+                        <input
                             v-model="administration_infos.nationality"
                             administration_infos
-                            value="" 
-                            id="nationality" 
-                            type="text" 
+                            value=""
+                            id="nationality"
+                            type="text"
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
@@ -81,29 +84,29 @@ export default {
                         <input
                             v-model="administration_infos.address"
                             name="administration_infos"
-                            id="address" 
-                            type="text" 
+                            id="address"
+                            type="text"
                             class="input"/>
                         <p class="help-text error">Ce champs obligatoire</p>
                     </div>
                     <div class="input-field col s4">
                         <label for="addresscomplementaire">Complement d'adresse</label>
-                        <input 
+                        <input
                             v-model="administration_infos.addresscomplementaire"
                             name="administration_infos"
-                            id="addresscomplementaire" 
-                            type="text" 
+                            id="addresscomplementaire"
+                            type="text"
                             class="input"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
                         <label for="postcode">Code postal *</label>
-                        <input 
+                        <input
                             v-model="administration_infos.postcode"
                             name="administration_infos"
-                            id="postcode" 
-                            type="text" 
+                            id="postcode"
+                            type="text"
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
@@ -111,9 +114,9 @@ export default {
                         <label for="city">Ville *</label>
                         <input
                             v-model="administration_infos.city"
-                            name="administration_infos"  
-                            id="city" 
-                            type="text" 
+                            name="administration_infos"
+                            id="city"
+                            type="text"
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
@@ -121,21 +124,21 @@ export default {
                 <div class="row">
                     <div class="input-field col s6 ">
                         <label for="telephone">Téléphone *</label>
-                        <input 
-                            v-model="administration_infos.telephone" 
+                        <input
+                            v-model="administration_infos.telephone"
                             name="administration_infos"
-                            id="telephone" 
-                            type="text" 
+                            id="telephone"
+                            type="text"
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
                     <div class="input-field col s6 ">
                         <label for="email">Email *</label>
-                        <input 
+                        <input
                             v-model="administration_infos.email"
                             name="administration_infos"
-                            id="email" 
-                            type="email" 
+                            id="email"
+                            type="email"
                             class="input"/>
                         <p class="help error">Ce champs obligatoire</p>
                     </div>
@@ -148,36 +151,36 @@ export default {
                         <div class="col s6">
                             <div class="field">
                                 <label>
-                                    <input 
+                                    <input
                                         v-model="administration_infos.statut.student"
                                         value="student"
                                         name="administration_infos"
-                                        id="student" 
-                                        type="checkbox" 
+                                        id="student"
+                                        type="checkbox"
                                         class=""/>
                                     <span>Élève ou étudiant·e</span>
                                 </label>
                             </div>
                             <div class="field ">
                                 <label for="employed">
-                                    <input 
-                                        v-model="administration_infos.statut.employed" 
+                                    <input
+                                        v-model="administration_infos.statut.employed"
                                         value="employed"
                                         name="administration_infos"
-                                        id="employed" 
-                                        type="checkbox" 
+                                        id="employed"
+                                        type="checkbox"
                                         class=""/>
                                     <span>Salarié·e</span>
                                 </label>
                             </div>
                             <div class="field ">
                                 <label for="unployed" class="checkbox">
-                                    <input 
-                                        v-model="administration_infos.statut.unployed" 
-                                        value="unployed" 
+                                    <input
+                                        v-model="administration_infos.statut.unployed"
+                                        value="unployed"
                                         name="administration_infos"
-                                        id="unployed" 
-                                        type="checkbox" 
+                                        id="unployed"
+                                        type="checkbox"
                                         class=""/>
                                     <span>Demandeur·se d'emploi</span>
                                 </label>
@@ -185,44 +188,44 @@ export default {
                             <div v-if="administration_infos.statut.unployed === true">
                                 <div class="field">
                                     <label for="allowance_poleemploi">
-                                        <input 
+                                        <input
                                             v-model="administration_infos.statut.allowance_poleemploi"
-                                            value="allowance_poleemploi" 
+                                            value="allowance_poleemploi"
                                             name="administration_infos"
-                                            id="allowance_poleemploi" 
-                                            type="checkbox" 
+                                            id="allowance_poleemploi"
+                                            type="checkbox"
                                             class=""/>
                                         <span>Indemnisé.e par Pôle Emploi</span>
                                     </label>
                                 </div>
                                 <div class="field">
                                     <label for="not_allowance">
-                                        <input 
+                                        <input
                                             v-model="administration_infos.statut.not_allowance"
                                             value="not_allowance"
                                             name="administration_infos"
-                                            id="not_allowance" 
-                                            type="checkbox" 
+                                            id="not_allowance"
+                                            type="checkbox"
                                             class=""/>
                                         <span>Non indemnisé.e par Pôle Emploi</span>
                                     </label>
                                 </div>
                                 <div class="input-field">
-                                        <input 
-                                            v-model="administration_infos.statut.poleemploi_office"  
+                                        <input
+                                            v-model="administration_infos.statut.poleemploi_office"
                                             name="poleemploi_office"
-                                            id="poleemploi_office" 
-                                            type="text" 
+                                            id="poleemploi_office"
+                                            type="text"
                                             class=""/>
                                          <label for="poleemploi_office">À quel Pôle emploi êtes-vous inscrit·e ?
                                     </label>
                                 </div>
                                 <div class="input-field">
-                                        <input 
-                                            v-model="administration_infos.statut.poleemploi_inscriptionnumber" 
-                                            name="poleemploi_inscriptionnumber" 
-                                            id="poleemploi_inscriptionnumber" 
-                                            type="text" 
+                                        <input
+                                            v-model="administration_infos.statut.poleemploi_inscriptionnumber"
+                                            name="poleemploi_inscriptionnumber"
+                                            id="poleemploi_inscriptionnumber"
+                                            type="text"
                                             class="validate"/>
                                         <label for="poleemploi_inscriptionnumber">Numéro Pôle Emploi
                                     </label>
@@ -230,60 +233,60 @@ export default {
                                 <div v-if="administration_infos.statut.allowance_poleemploi === true">
                                     <div class="field">
                                         <label for="ass">
-                                            <input 
-                                                v-model="administration_infos.statut.ass" 
-                                                value="ass" 
+                                            <input
+                                                v-model="administration_infos.statut.ass"
+                                                value="ass"
                                                 name="administration_infos"
-                                                id="ass" 
-                                                type="checkbox" 
+                                                id="ass"
+                                                type="checkbox"
                                                 class=""/>
                                             <span>Allocataire ASS</span>
                                         </label>
                                     </div>
                                     <div class="field ">
                                         <label for="ash">
-                                            <input 
+                                            <input
                                                 v-model="administration_infos.statut.ash"
-                                                value="ash"  
+                                                value="ash"
                                                 name="administration_infos"
-                                                id="ash" 
-                                                type="checkbox" 
+                                                id="ash"
+                                                type="checkbox"
                                                 class=""/>
                                             <span>Allocataire ASH</span>
                                         </label>
                                     </div>
                                     <div class="field ">
                                         <label for="missionlocal">
-                                            <input 
-                                                v-model="administration_infos.statut.missionlocal" 
-                                                value="missionlocal" 
+                                            <input
+                                                v-model="administration_infos.statut.missionlocal"
+                                                value="missionlocal"
                                                 name="administration_infos"
-                                                id="missionlocal" 
-                                                type="checkbox" 
+                                                id="missionlocal"
+                                                type="checkbox"
                                                 class=""/>
                                             <span>Allocataire de la Garantie jeunes de la Mission Locale</span>
                                         </label>
                                     </div>
                                      <div class="field ">
                                         <label for="other_allowance">
-                                            <input 
-                                                v-model="administration_infos.statut.other_allowance" 
-                                                value="other_allowance" 
+                                            <input
+                                                v-model="administration_infos.statut.other_allowance"
+                                                value="other_allowance"
                                                 name="administration_infos"
-                                                id="other_allowance" 
-                                                type="checkbox" 
+                                                id="other_allowance"
+                                                type="checkbox"
                                                 class=""/>
                                             <span>Autre</span>
                                         </label>
                                         <div class="input-field" v-if="administration_infos.statut.other_allowance === true">
-                                            <input 
-                                                v-model="administration_infos.statut.other_allowance_custom"  
+                                            <input
+                                                v-model="administration_infos.statut.other_allowance_custom"
                                                 type="text"
                                                 class="validate"
                                                 id="other_allowance_custom">
                                             <label for="other_allowance_custom">Quel indemnité ?</label>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -292,23 +295,23 @@ export default {
                         <div class="col s6">
                             <div class="field ">
                                 <label for="rsa">
-                                    <input 
-                                        v-model="administration_infos.statut.rsa"  
+                                    <input
+                                        v-model="administration_infos.statut.rsa"
                                         name="administration_infos"
-                                        id="rsa" 
-                                        type="checkbox" 
+                                        id="rsa"
+                                        type="checkbox"
                                         class=""/>
                                     <span>Allocataire RSA</span>
                                 </label>
                             </div>
                             <div class="field ">
                                 <label for="refugee">
-                                    <input 
-                                        v-model="administration_infos.statut.refugee"  
+                                    <input
+                                        v-model="administration_infos.statut.refugee"
                                         value="refugee"
                                         name="administration_infos"
-                                        id="refugee" 
-                                        type="checkbox" 
+                                        id="refugee"
+                                        type="checkbox"
                                         class=""/>
                                     <span>Réfugié·e politique statutaire</span>
                                 </label>
@@ -321,8 +324,8 @@ export default {
         </div>
         <br><br>
         <div class="center-align group-button">
-            <a class="waves-effect waves-light btn">Retourner</a>
-            <a class="waves-effect waves-light btn">Suivant</a>
+            <a class="waves-effect waves-light btn" @click="$emit('prevStep')">Retourner</a>
+            <a class="waves-effect waves-light btn" @click="validate()">Suivant</a>
         </div>
     </div>
 </template>
