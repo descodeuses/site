@@ -48,9 +48,7 @@ export default {
 							v-model="motivation.github"
 							name="github"
 							placeholder="ex. https://github.com/descodeuses"
-							class="validate"
-							id="github"
-						/>
+							id="github"/>
 					</div>
 				</div>
 				<div class="row left-align">
@@ -61,8 +59,9 @@ export default {
 						cols="30"
 						rows="10"
 						class="materialize-textarea"
-					></textarea>
-					<p class="help-text error">Ce champs obligatoire</p>
+						v-validate="'required'"
+						:class="{invalid: errors.has('obstacle')}"></textarea>
+					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
 					<h2 for>Pourquoi voulez-vous intégrer la formation DESCODEUSES ? *</h2>
@@ -75,8 +74,9 @@ export default {
 						cols="30"
 						rows="10"
 						class="materialize-textarea"
-					></textarea>
-					<p class="help-text error">Ce champs obligatoire</p>
+						v-validate="'required'"
+						:class="{invalid: errors.has('whydescodeuses')}"></textarea>
+					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
 					<h2 for>Quel parcours professionnel envisagez-vous après la formation ?</h2>
@@ -86,8 +86,9 @@ export default {
 						cols="30"
 						rows="10"
 						class="materialize-textarea"
-					></textarea>
-					<p class="help-text error">Ce champs obligatoire</p>
+						v-validate="'required'"
+						:class="{invalid: errors.has('afterformation')}"></textarea>
+					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
 					<h2 for>Décrivez le métier de codeuse - developpeuse ?</h2>
@@ -97,41 +98,62 @@ export default {
 						cols="30"
 						rows="10"
 						class="materialize-textarea"
-					></textarea>
-					<p class="help-text error">Ce champs obligatoire</p>
+						v-validate="'required'"
+						:class="{invalid: errors.has('developerdescription')}"></textarea>
+					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
 					<div class="col s4">
 						<h2>Avez-vous un ordinateur ? *</h2>
 						<div class="control">
 							<label>
-								<input v-model="motivation.havecomputer" name="havecomputer" value="yes" type="radio" />
+								<input 
+									v-model="motivation.havecomputer" 
+									name="havecomputer" 
+									value="yes" 
+									type="radio" 
+									v-validate="'required'"
+									:class="{invalid: errors.has('havecomputer')}"/>
 								<span>Oui</span>
 							</label>
 						</div>
 						<div class="control">
 							<label>
-								<input v-model="motivation.havecomputer" name="havecomputer" value="no" type="radio" />
+								<input 
+									v-model="motivation.havecomputer" 
+									name="havecomputer" 
+									value="no" 
+									type="radio" />
 								<span>Non</span>
 							</label>
 						</div>
-						<p class="help-text error">Ce champs obligatoire</p>
+						<span class="helper-text" data-error="Ce champs obligatoire"></span>
 					</div>
 					<div class="col s4 left-align">
 						<h2>Avez-vous participé à un atelier d’initiation à la programmation ?</h2>
 						<div class="control">
 							<label>
-								<input v-model="motivation.workshop" name="workshop" value="yes" type="radio" />
+								<input 
+									v-model="motivation.workshop" 
+									name="workshop" 
+									value="yes"
+									v-validate="'required'" 
+									type="radio"
+									:class="{invalid: errors.has('workshop')}"/>
 								<span>Oui</span>
 							</label>
 						</div>
 						<div class="control">
 							<label>
-								<input v-model="motivation.workshop" name="workshop" value="no" type="radio" />
+								<input 
+									v-model="motivation.workshop" 
+									name="workshop" 
+									value="no" 
+									type="radio" />
 								<span>Non</span>
 							</label>
 						</div>
-						<p class="help-text error">Ce champs obligatoire</p>
+						<span class="helper-text" data-error="Ce champs obligatoire"></span>
 					</div>
 					<div class="col s4 left-align">
 						<h2>Votre CV</h2>
