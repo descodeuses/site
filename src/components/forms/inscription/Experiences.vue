@@ -7,12 +7,10 @@ export default {
     },
     data(){
         return {
-            experiences: {
-
-            },
-            language: {
-            },
-            languageLevel: {
+            exp: {
+                experiences: {},
+                language: {},
+                languageLevel: {}
             }
         }
     },
@@ -36,34 +34,33 @@ export default {
                 <div class="row">
                     <div class="input-field col s12">
                         <h2>Avez-vous déjà eu une expérience en programmation et/ou de manipulation de données avant ? *</h2>
-                        <div class="field">
+                        <p>
                             <label for="yes">
                                 <input
                                     type="radio"
                                     id="yes"
-                                    v-model="experiences.code"
+                                    v-model="exp.experiences.code"
                                     name="experience"
-                                    v-validate="'required'"
-                                    />
+                                    v-validate="'required'"/>
                                 <span>Oui, j'ai déjà codé</span>
                             </label>
-                        </div>
-                        <div class="field">
+                        </p>
+                        <p>
                             <label for="no">
                                 <input
                                     type="radio"
                                     id="no"
-                                    v-model="experiences.code"
+                                    v-model="exp.experiences.code"
                                     name="experience"
                                     v-validate="'required'"
                                     />
                                 <span> Non, aucune experience</span>
                             </label>
-                        </div>
-                        <span class="helper-text" data-error="Ce champs obligatoire" data-success="right"></span>
+                        </p>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
 
-                    <div class="control" v-if="experiences.experience === 'yes'">
+                    <div class="control" v-if="exp.experiences.experience === 'yes'">
                         <h2>Racontez-nous vos expériences</h2>
                         <textarea
                             name="experience_code"
@@ -71,12 +68,12 @@ export default {
                             cols="30"
                             rows="5"
                             class="materialize-textarea"
-                            v-model="experiences.experience_code"
+                            v-model="exp.experiences.experience_code"
                             v-validate="'required'"></textarea>
-                        <p class="help error">Ce champs obligatoire</p>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
 
-                    <div class="control" v-else-if="experiences.experience === 'no'">
+                    <div class="control" v-else-if="exp.experiences.experience === 'no'">
                         <h2>Pourquoi vouloir intégrer cette formation ?</h2>
                         <textarea
                             name="hasNoExperiences"
@@ -84,9 +81,9 @@ export default {
                             cols="30"
                             rows="5"
                             class="materialize-textarea"
-                            v-model="experiences.hasNoExperiences"
+                            v-model="exp.experiences.hasNoExperiences"
                             v-validate="'required'"></textarea>
-                        <p class="help error">Ce champs obligatoire</p>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                 </div>
                 <div class="row">
@@ -97,9 +94,9 @@ export default {
                         type="text"
                         class="input"
                         placeholder="ex. bac"
-                        v-model="experiences.diplome"
+                        v-model="exp.experiences.diplome"
                         v-validate="'required'"/>
-                    <p class="help error">Ce champs obligatoire</p>
+                    <span class="helper-text" data-error="Ce champs obligatoire"></span>
                 </div>
                 <div class="row">
                     <h2 for="">Racontez-nous en quelques phrases votre histoire. *</h2>
@@ -110,9 +107,9 @@ export default {
                         cols="30"
                         rows="10"
                         class="materialize-textarea"
-                        v-model="experiences.ownHistory"
+                        v-model="exp.experiences.ownHistory"
                         v-validate="'required'"></textarea>
-                    <p class="help error">Ce champs obligatoire</p>
+                    <span class="helper-text" data-error="Ce champs obligatoire"></span>
                 </div>
                 <div class="row">
                     <h2>Vos langues</h2>
@@ -125,7 +122,7 @@ export default {
                                         type="checkbox"
                                         class=""
                                         name="language"
-                                        v-model="language.french"
+                                        v-model="exp.language.french"
                                         value="french"
                                         id="french"
                                         />
@@ -137,7 +134,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="advancedFrench"
-                                        v-model="languageLevel.french"
+                                        v-model="exp.languageLevel.french"
                                         value="advancedFrench"/>
                                     <span>Avancé</span>
                                 </label>
@@ -147,7 +144,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="intermediaryFrench"
-                                        v-model="languageLevel.french"
+                                        v-model="exp.languageLevel.french"
                                         value="intermediaryFrench"/>
                                     <span>Intermedière</span>
                                 </label>
@@ -157,7 +154,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="beginningFrench"
-                                        v-model="languageLevel.french"
+                                        v-model="exp.languageLevel.french"
                                         value="beginningFrench"/>
                                     <span>Débutant.e </span>
                                 </label>
@@ -169,7 +166,7 @@ export default {
                                     <input
                                         type="checkbox"
                                         class=""
-                                        v-model="language.english"
+                                        v-model="exp.language.english"
                                         value="english"
                                         id="english"/>
                                     <span>Anglais</span>
@@ -180,7 +177,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="advancedEnglish"
-                                        v-model="languageLevel.english"
+                                        v-model="exp.languageLevel.english"
                                         value="advancedEnglish"/>
                                     <span>Avancé</span>
                                 </label>
@@ -190,7 +187,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="intermediaryEnglish"
-                                        v-model="languageLevel.english"
+                                        v-model="exp.languageLevel.english"
                                         value="intermediaryEnglish"/>
                                     <span>Intermedière</span>
                                 </label>
@@ -200,7 +197,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="beginningEnglish"
-                                        v-model="languageLevel.english"
+                                        v-model="exp.languageLevel.english"
                                         value="beginningEnglish"/>
                                     <span>Débutant.e</span>
                                 </label>
@@ -212,7 +209,7 @@ export default {
                                     <input
                                         type="checkbox"
                                         class=""
-                                        v-model="language.arabic"
+                                        v-model="exp.language.arabic"
                                         name="language"
                                         value="arabic" id="arabic"/>
                                     <span>Arabe</span>
@@ -223,7 +220,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="advancedArabic"
-                                        v-model="languageLevel.arabic"
+                                        v-model="exp.languageLevel.arabic"
                                         name="languageLevel"
                                         value="advancedArabic"/>
                                     <span>Avancé</span>
@@ -233,7 +230,7 @@ export default {
                                 <label for="intermediaryArabic">
                                     <input
                                         type="radio" id="intermediaryArabic"
-                                        v-model="languageLevel.arabic"
+                                        v-model="exp.languageLevel.arabic"
                                         name="languageLevel"
                                         value="intermediaryArabic"/>
                                     <span>Intermedière</span>
@@ -244,7 +241,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="beginningArabic"
-                                        v-model="languageLevel.arabic"
+                                        v-model="exp.languageLevel.arabic"
                                         name="languageLevel"
                                         value="beginningArabic"/>
                                     <span>Débutant.e</span>
@@ -257,7 +254,7 @@ export default {
                                     <input
                                         type="checkbox"
                                         class=""
-                                        v-model="language.other"
+                                        v-model="exp.language.other"
                                         name="language"
                                         value="other"
                                         id="other">
@@ -265,8 +262,8 @@ export default {
 
                                 </label>
                                 <input
-                                    v-if="language.other == true"
-                                    v-model="language.otherlanguage"
+                                    v-if="exp.language.other == true"
+                                    v-model="exp.language.otherlanguage"
                                     type="text"
                                     placeholder="Quel autre langue ?"
                                     v-validate="'required'" class="input is-inline"/>
@@ -276,7 +273,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="advancedOther"
-                                        v-model="languageLevel.other"
+                                        v-model="exp.languageLevel.other"
                                         name="languageLevel"
                                         value="advancedOther"/>
                                     <span>Avancé</span>
@@ -287,7 +284,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="intermediaryOther"
-                                        v-model="languageLevel.other"
+                                        v-model="exp.languageLevel.other"
                                         name="languageLevel"
                                         value="intermediaryOther"/>
                                     <span>Intermedière</span>
@@ -298,7 +295,7 @@ export default {
                                     <input
                                         type="radio"
                                         id="beginningOther"
-                                        v-model="languageLevel.other"
+                                        v-model="exp.languageLevel.other"
                                         name="languageLevel"
                                         value="beginningOther"/>
                                     <span>Débutant.e </span>
@@ -308,10 +305,10 @@ export default {
                     </div>
                 </div>
                 <div class="row"
-                    v-if="language.english === true">
+                    v-if="exp.language.english === true">
                     <h2>Expliquez-nous en anglais vos motivations pour participer à notre formation. *</h2>
                     <textarea
-                        v-model="language.englishtext"
+                        v-model="exp.language.englishtext"
                         name="english"
                         id=""
                         cols="30"
