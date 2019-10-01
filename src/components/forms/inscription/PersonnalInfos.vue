@@ -2,6 +2,7 @@
 export default {
     data() {
         return {
+            regexName: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(([' -][A-Za-zÀ-ÖØ-öø-ÿ ])?[A-Za-zÀ-ÖØ-öø-ÿ]*)*$/,
             administration_infos: {
 				statut: {}
 			}
@@ -27,55 +28,62 @@ export default {
                         <select
                             v-model="administration_infos.gender"
                             name="gender"
-                            id="gender">
+                            id="gender"
+                            v-validate="'required'"
+                            :class="{invalid: errors.has('gender')}">
                             <option value="" disabled selected>Genre *</option>
                             <option value="woman">Femme</option>
                             <option value="man">Homme</option>
                             <option value="other">Autre</option>
                         </select>
+                        <span class="helper-text error" v-if="errors.has('gender')">obligatoire</span>
                     </div>
                     <div class="input-field col s5">
                         <label for="first_name">Prénom *</label>
                         <input
                             v-model="administration_infos.first_name"
-                            name="administration_infos"
+                            name="first_name"
                             id="first_name"
                             type="text"
-                            class="input"/>
-                        <p class="help-text error">Ce champs obligatoire</p>
+                            v-validate="{ required: true, regex: regexName}"
+                            :class="{invalid: errors.has('first_name')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s5">
                         <label for="last_name">Nom *</label>
                         <input
                             v-model="administration_infos.last_name"
-                            name="administration_infos"
+                            name="last_name"
                             id="last_name"
                             type="text"
-                            class="input"/>
-                        <p class="help-text error">Ce champs obligatoire</p>
+                            v-validate="{ required: true, regex: regexName}"
+                            :class="{invalid: errors.has('last_name')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <label for="birthday">Date de naissance *</label>
+                        <label for="birthday">Date de naissance JJ/MM/AAAA</label>
                         <input
                             v-model="administration_infos.birthday"
-                            name="administration_infos"
+                            name="birthday"
                             id="birthday"
                             type="text"
-                            class="input"/>
-                        <p class="help error">Ce champs obligatoire</p>
+                            v-validate="'required|date_format:dd/MM/yyyy'"
+                            :class="{invalid: errors.has('birthday')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s6">
                         <label for="nationality">Nationalité *</label>
                         <input
                             v-model="administration_infos.nationality"
-                            administration_infos
-                            value=""
+                            name="nationality"
+                            value="nationality"
                             id="nationality"
                             type="text"
-                            class="input"/>
-                        <p class="help error">Ce champs obligatoire</p>
+                            v-validate="'required'"
+                            :class="{invalid: errors.has('nationality')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                 </div>
                 <div class="row">
@@ -83,17 +91,18 @@ export default {
                         <label for="address">Adresse postale complète *</label>
                         <input
                             v-model="administration_infos.address"
-                            name="administration_infos"
+                            name="address"
                             id="address"
                             type="text"
-                            class="input"/>
-                        <p class="help-text error">Ce champs obligatoire</p>
+                            v-validate="'required'"
+                            :class="{invalid: errors.has('address')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s4">
                         <label for="addresscomplementaire">Complement d'adresse</label>
                         <input
                             v-model="administration_infos.addresscomplementaire"
-                            name="administration_infos"
+                            name="addresscomplementaire"
                             id="addresscomplementaire"
                             type="text"
                             class="input"/>
@@ -104,21 +113,23 @@ export default {
                         <label for="postcode">Code postal *</label>
                         <input
                             v-model="administration_infos.postcode"
-                            name="administration_infos"
+                            name="postcode"
                             id="postcode"
                             type="text"
-                            class="input"/>
-                        <p class="help error">Ce champs obligatoire</p>
+                            v-validate="'required|numeric|min:5|max:5'"
+                            :class="{invalid: errors.has('postcode')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s6">
                         <label for="city">Ville *</label>
                         <input
                             v-model="administration_infos.city"
-                            name="administration_infos"
+                            name="city"
                             id="city"
                             type="text"
-                            class="input"/>
-                        <p class="help error">Ce champs obligatoire</p>
+                            v-validate="{ required: true, regex: regexName}"
+                            :class="{invalid: errors.has('city')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                 </div>
                 <div class="row">
@@ -126,21 +137,23 @@ export default {
                         <label for="telephone">Téléphone *</label>
                         <input
                             v-model="administration_infos.telephone"
-                            name="administration_infos"
+                            name="telephone"
                             id="telephone"
                             type="text"
-                            class="input"/>
-                        <p class="help error">Ce champs obligatoire</p>
+                            v-validate="'required|numeric|min:10|max:10'"
+                            :class="{invalid: errors.has('telephone')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s6 ">
                         <label for="email">Email *</label>
                         <input
                             v-model="administration_infos.email"
-                            name="administration_infos"
+                            name="email"
                             id="email"
                             type="email"
-                            class="input"/>
-                        <p class="help error">Ce champs obligatoire</p>
+                            v-validate="'required|email'"
+                            :class="{invalid: errors.has('email')}"/>
+                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                 </div>
                 <div class="row">
@@ -290,7 +303,6 @@ export default {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col s6">
                             <div class="field ">
@@ -317,7 +329,7 @@ export default {
                                 </label>
                             </div>
                         </div>
-                        <p class="help-text error">Au moins un des options est obligatoire</p>
+                        <span class="helper-text" data-error="Au moins un des options est obligatoire"></span>
                     </div>
                 </div>
             </form>
