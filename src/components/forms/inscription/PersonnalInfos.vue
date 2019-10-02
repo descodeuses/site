@@ -1,5 +1,10 @@
 <script>
+import { ValidationProvider } from 'vee-validate';
+
 export default {
+    components: {
+        ValidationProvider
+    },
     data() {
         return {
             regexName: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(([' -][A-Za-zÀ-ÖØ-öø-ÿ ])?[A-Za-zÀ-ÖØ-öø-ÿ]*)*$/,
