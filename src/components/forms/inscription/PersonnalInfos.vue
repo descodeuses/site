@@ -1,9 +1,11 @@
 <script>
 import { ValidationProvider } from 'vee-validate';
+import BaseButton from '@/components/elements/Button.vue'
 
 export default {
     components: {
-        ValidationProvider
+		ValidationProvider,
+		BaseButton
     },
     data() {
         return {
@@ -13,10 +15,20 @@ export default {
 			}
         }
 	},
+	created() {
+		let form = this.$store.getters['register/form']
+		if (form.info)
+			this.administration_infos = form.info
+	},
 	methods: {
+		goBack() {
+			this.$store.dispatch('register/updateInfo', this.administration_infos)
+			this.$emit('prevStep')
+		},
 		validate() {
 			this.$validator.validateAll().then(result => {
 				if (!result) return
+				this.$store.dispatch('register/updateInfo', this.administration_infos)
 				this.$emit('nextStep')
 			})
 		}
@@ -44,7 +56,7 @@ export default {
                         <span class="helper-text error" v-if="errors.has('gender')">obligatoire</span>
                     </div>
                     <div class="input-field col s5">
-                        <label for="first_name">Prénom *</label>
+                        <label :class="{active: administration_infos.first_name}" for="first_name">Prénom *</label>
                         <input
                             v-model="administration_infos.first_name"
                             name="first_name"
@@ -55,7 +67,7 @@ export default {
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s5">
-                        <label for="last_name">Nom *</label>
+                        <label :class="{active: administration_infos.last_name}" for="last_name">Nom *</label>
                         <input
                             v-model="administration_infos.last_name"
                             name="last_name"
@@ -68,7 +80,7 @@ export default {
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <label for="birthday">Date de naissance JJ/MM/AAAA</label>
+                        <label :class="{active: administration_infos.birthday}" for="birthday">Date de naissance JJ/MM/AAAA</label>
                         <input
                             v-model="administration_infos.birthday"
                             name="birthday"
@@ -79,7 +91,7 @@ export default {
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s6">
-                        <label for="nationality">Nationalité *</label>
+                        <label :class="{active: administration_infos.nationality}" for="nationality">Nationalité *</label>
                         <input
                             v-model="administration_infos.nationality"
                             name="nationality"
@@ -93,7 +105,7 @@ export default {
                 </div>
                 <div class="row">
                     <div class="input-field col s8">
-                        <label for="address">Adresse postale complète *</label>
+                        <label :class="{active: administration_infos.address}" for="address">Adresse postale complète *</label>
                         <input
                             v-model="administration_infos.address"
                             name="address"
@@ -104,7 +116,7 @@ export default {
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s4">
-                        <label for="addresscomplementaire">Complement d'adresse</label>
+                        <label :class="{active: administration_infos.addresscomplementaire}" for="addresscomplementaire">Complement d'adresse</label>
                         <input
                             v-model="administration_infos.addresscomplementaire"
                             name="addresscomplementaire"
@@ -115,7 +127,7 @@ export default {
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <label for="postcode">Code postal *</label>
+                        <label :class="{active: administration_infos.postcode}" for="postcode">Code postal *</label>
                         <input
                             v-model="administration_infos.postcode"
                             name="postcode"
@@ -126,7 +138,7 @@ export default {
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s6">
-                        <label for="city">Ville *</label>
+                        <label :class="{active: administration_infos.city}" for="city">Ville *</label>
                         <input
                             v-model="administration_infos.city"
                             name="city"
@@ -139,7 +151,7 @@ export default {
                 </div>
                 <div class="row">
                     <div class="input-field col s6 ">
-                        <label for="telephone">Téléphone *</label>
+                        <label :class="{active: administration_infos.telephone}" for="telephone">Téléphone *</label>
                         <input
                             v-model="administration_infos.telephone"
                             name="telephone"
@@ -150,7 +162,7 @@ export default {
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
                     <div class="input-field col s6 ">
-                        <label for="email">Email *</label>
+                        <label :class="{active: administration_infos.email}" for="email">Email *</label>
                         <input
                             v-model="administration_infos.email"
                             name="email"
@@ -192,7 +204,7 @@ export default {
                                 </label>
                             </div>
                             <div class="field ">
-                                <label for="unployed" class="checkbox">
+                                <label :class="{active: administration_infos.unployed}" for="unployed" class="checkbox">
                                     <input
                                         v-model="administration_infos.statut.unployed"
                                         value="unployed"
@@ -205,7 +217,7 @@ export default {
                             </div>
                             <div v-if="administration_infos.statut.unployed === true">
                                 <div class="field">
-                                    <label for="allowance_poleemploi">
+                                    <label :class="{active: administration_infos.statut.allowance_poleemploi}" for="allowance_poleemploi">
                                         <input
                                             v-model="administration_infos.statut.allowance_poleemploi"
                                             value="allowance_poleemploi"
@@ -217,7 +229,7 @@ export default {
                                     </label>
                                 </div>
                                 <div class="field">
-                                    <label for="not_allowance">
+                                    <label :class="{active: administration_infos.not_allowance}" for="not_allowance">
                                         <input
                                             v-model="administration_infos.statut.not_allowance"
                                             value="not_allowance"
@@ -235,7 +247,7 @@ export default {
                                             id="poleemploi_office"
                                             type="text"
                                             class=""/>
-                                         <label for="poleemploi_office">À quel Pôle emploi êtes-vous inscrit·e ?
+                                         <label :class="{active: administration_infos.statut.poleemploi_office}" for="poleemploi_office">À quel Pôle emploi êtes-vous inscrit·e ?
                                     </label>
                                 </div>
                                 <div class="input-field">
@@ -245,7 +257,7 @@ export default {
                                             id="poleemploi_inscriptionnumber"
                                             type="text"
                                             class="validate"/>
-                                        <label for="poleemploi_inscriptionnumber">Numéro Pôle Emploi
+                                        <label :class="{active: administration_infos.statut.poleemploi_inscriptionnumber}" for="poleemploi_inscriptionnumber">Numéro Pôle Emploi
                                     </label>
                                 </div>
                                 <div v-if="administration_infos.statut.allowance_poleemploi === true">
@@ -302,7 +314,7 @@ export default {
                                                 type="text"
                                                 class="validate"
                                                 id="other_allowance_custom">
-                                            <label for="other_allowance_custom">Quel indemnité ?</label>
+                                            <label :class="{active: administration_infos.statut.other_allowance_custom}" for="other_allowance_custom">Quel indemnité ?</label>
                                         </div>
 
                                     </div>
@@ -339,11 +351,14 @@ export default {
                 </div>
             </form>
         </div>
-        <br><br>
-        <div class="center-align group-button">
-            <a class="waves-effect waves-light btn" @click="$emit('prevStep')">Retourner</a>
-            <a class="waves-effect waves-light btn" @click="validate()">Suivant</a>
-        </div>
+        <div class="center">
+			<BaseButton :func="goBack">
+				precendent
+			</BaseButton>
+			<BaseButton :func="validate">
+				suivant
+			</BaseButton>
+		</div>
     </div>
 </template>
 <style scoped>

@@ -1,14 +1,27 @@
 <script>
+import BaseButton from '@/components/elements/Button.vue'
 export default {
+	components: {
+		BaseButton
+	},
 	data() {
 		return {
 			motivation: {}
 		}
 	},
+	created() {
+		let form = this.$store.getters['register/form']
+		if (form.motivations) this.motivation = form.motivations
+	},
 	methods: {
+		goBack() {
+			this.$store.dispatch('register/updateMotivation', this.motivation)
+			this.$emit('prevStep')
+		},
 		validate() {
 			this.$validator.validateAll().then(result => {
 				if (!result) return
+				this.$store.dispatch('register/updateMotivation', this.motivation)
 				this.$emit('nextStep')
 			})
 		}
@@ -48,7 +61,8 @@ export default {
 							v-model="motivation.github"
 							name="github"
 							placeholder="ex. https://github.com/descodeuses"
-							id="github"/>
+							id="github"
+						/>
 					</div>
 				</div>
 				<div class="row left-align">
@@ -60,7 +74,8 @@ export default {
 						rows="10"
 						class="materialize-textarea"
 						v-validate="'required'"
-						:class="{invalid: errors.has('obstacle')}"></textarea>
+						:class="{invalid: errors.has('obstacle')}"
+					></textarea>
 					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
@@ -75,7 +90,8 @@ export default {
 						rows="10"
 						class="materialize-textarea"
 						v-validate="'required'"
-						:class="{invalid: errors.has('whydescodeuses')}"></textarea>
+						:class="{invalid: errors.has('whydescodeuses')}"
+					></textarea>
 					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
@@ -87,7 +103,8 @@ export default {
 						rows="10"
 						class="materialize-textarea"
 						v-validate="'required'"
-						:class="{invalid: errors.has('afterformation')}"></textarea>
+						:class="{invalid: errors.has('afterformation')}"
+					></textarea>
 					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
@@ -99,7 +116,8 @@ export default {
 						rows="10"
 						class="materialize-textarea"
 						v-validate="'required'"
-						:class="{invalid: errors.has('developerdescription')}"></textarea>
+						:class="{invalid: errors.has('developerdescription')}"
+					></textarea>
 					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
@@ -107,23 +125,20 @@ export default {
 						<h2>Avez-vous un ordinateur ? *</h2>
 						<div class="control">
 							<label>
-								<input 
-									v-model="motivation.havecomputer" 
-									name="havecomputer" 
-									value="yes" 
-									type="radio" 
+								<input
+									v-model="motivation.havecomputer"
+									name="havecomputer"
+									:value="true"
+									type="radio"
 									v-validate="'required'"
-									:class="{invalid: errors.has('havecomputer')}"/>
+									:class="{invalid: errors.has('havecomputer')}"
+								/>
 								<span>Oui</span>
 							</label>
 						</div>
 						<div class="control">
 							<label>
-								<input 
-									v-model="motivation.havecomputer" 
-									name="havecomputer" 
-									value="no" 
-									type="radio" />
+								<input v-model="motivation.havecomputer" name="havecomputer" :value="false" type="radio" />
 								<span>Non</span>
 							</label>
 						</div>
@@ -133,23 +148,20 @@ export default {
 						<h2>Avez-vous participé à un atelier d’initiation à la programmation ?</h2>
 						<div class="control">
 							<label>
-								<input 
-									v-model="motivation.workshop" 
-									name="workshop" 
-									value="yes"
-									v-validate="'required'" 
+								<input
+									v-model="motivation.workshop"
+									name="workshop"
+									:value="true"
+									v-validate="'required'"
 									type="radio"
-									:class="{invalid: errors.has('workshop')}"/>
+									:class="{invalid: errors.has('workshop')}"
+								/>
 								<span>Oui</span>
 							</label>
 						</div>
 						<div class="control">
 							<label>
-								<input 
-									v-model="motivation.workshop" 
-									name="workshop" 
-									value="no" 
-									type="radio" />
+								<input v-model="motivation.workshop" name="workshop" :value="false" type="radio" />
 								<span>Non</span>
 							</label>
 						</div>
@@ -165,11 +177,11 @@ export default {
 						<p class="help-text error">Il est obligatoire avoir un CV</p>
 					</div>
 				</div>
-				<div class="center-align group-button">
-					<a class="waves-effect waves-light btn" @click="$emit('prevStep')">Retourner</a>
-					<a class="waves-effect waves-light btn" @click="validate()">Suivant</a>
-				</div>
 			</form>
+			<div class="center">
+				<BaseButton :func="goBack">precendent</BaseButton>
+				<BaseButton :func="validate">suivant</BaseButton>
+			</div>
 		</div>
 	</div>
 </template>

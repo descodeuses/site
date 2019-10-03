@@ -2,7 +2,11 @@ const state = {
 	form: {}
 }
 
-const getters = {}
+const getters = {
+	form: state => {
+		return state.form
+	}
+}
 
 const actions = {
 	updateMotivation(context, attributes){
@@ -20,7 +24,7 @@ const actions = {
 }
 const mutations = {
 	SET_MOTIVATION(state, data) {
-		state.form.motivation = data
+		state.form.motivations = data
 	},
 
 	SET_EXPERIENCES(state, data) {

@@ -3,6 +3,7 @@ import PersonnalInfos from '@/components/forms/inscription/PersonnalInfos.vue'
 import Experiences from '@/components/forms/inscription/Experiences.vue'
 import Motivations from '@/components/forms/inscription/Motivations.vue'
 import { updateM } from '@/utils/materialize'
+import BaseButton from '@/components/elements/Button.vue'
 
 export default {
 	data() {
@@ -13,7 +14,8 @@ export default {
 	components: {
 		PersonnalInfos,
 		Motivations,
-		Experiences
+		Experiences,
+		BaseButton
 	},
 	methods: {
 		prevStep() {
@@ -27,7 +29,7 @@ export default {
 		},
 		submit() {
 			this.$axios
-				.post('/register', this.$store.state.register.form)
+				.post('/register', this.$store.getters['register/form'])
 				.then(res => {
 					// TO DO
 				})
@@ -63,7 +65,7 @@ export default {
 			<br />
 			<br />
 			<div class="center-align">
-				<a class="waves-effect waves-light btn" @click="nextStep()">J'accepte</a>
+				<BaseButton :func="nextStep">J'accepte</BaseButton>
 			</div>
 			<br />
 			<br />
