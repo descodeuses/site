@@ -1,8 +1,16 @@
 <script>
+import Modal from '@/components/elements/Modal.vue'
+import Loader from '@/components/elements/Loader.vue'
+
 export default {
+	components: {
+		Modal,
+		Loader
+	},
 	data() {
 		return {
-			motivation: {}
+			motivation: {},
+			loading: false,
 		}
 	},
 	methods: {
@@ -21,6 +29,7 @@ export default {
 		<h1 class="title is-uppercase">Motivations</h1>
 		<span class="help-text">* les champs sont obligatoires</span>
 		<div class="row left-align">
+			<Loader v-if="loading"/>
 			<h2>Pré-requis obligatoires :</h2>
 			<p>Pour évaluer votre motivation, nous allons regarder que vous avez terminé les parcours que nous vous conseillons sur OPC. Voici comment faire :</p>
 			<ol>
@@ -171,6 +180,11 @@ export default {
 				</div>
 			</form>
 		</div>
+		<Modal
+			:header="'Inscription pris en compte'"
+			:subheader="'Nous allons étudier votre candidature !'"
+			:validate="redirect"
+			ref="modal"/>
 	</div>
 </template>
 <style scoped>
