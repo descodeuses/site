@@ -5,6 +5,7 @@ import inscription from './pages/inscription.vue'
 import association from './pages/association.vue'
 import formations from './pages/formations.vue'
 import contact from './pages/contact.vue'
+import aide from './pages/aide.vue'
 
 
 Vue.use(Router)
@@ -36,6 +37,11 @@ export default new Router({
                 path: '/contact',
                 name: 'contact',
                 component: contact
+            },
+            {
+                path: '/aide',
+                name: 'aide',
+                component: aide
             }
         ]
     })
