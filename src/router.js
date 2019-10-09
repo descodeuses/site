@@ -6,6 +6,7 @@ import association from './pages/association.vue'
 import formations from './pages/formations.vue'
 import contact from './pages/contact.vue'
 import aide from './pages/aide.vue'
+import accompagnement from './pages/accompagnement.vue'
 
 
 Vue.use(Router)
@@ -42,6 +43,11 @@ export default new Router({
                 path: '/aide',
                 name: 'aide',
                 component: aide
+            },
+            {
+                path: '/accompagnement',
+                name: 'accompagnement',
+                component: accompagnement
             }
         ]
     })
