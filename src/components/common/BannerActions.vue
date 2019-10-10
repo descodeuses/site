@@ -34,8 +34,8 @@
                 <div class="left-align">
                     <p class="bold">Nous accompagnons chaque apprenante vers l'emploi:</p>
                     <ul>
-                        <li><i class="material-icons">school</i>Coaching individuel sur mesure </li>
-                        <li><i class="material-icons">school</i>Ateliers collectifs d'accompagnement avec programme personnalisé.</li>
+                        <li><i class="material-icons">school</i>En proposant des ateliers collectifs favorisant l'échange et le partage d'expérience </li>
+                        <li><i class="material-icons">school</i>En faisant des ateliers et coaching individuels sur-mesure (définir son parcours professionnel, adapter sa recherche d'emploi, préparer un entretien…)</li>
                     </ul>
                 </div>
             </div>
