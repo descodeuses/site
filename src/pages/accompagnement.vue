@@ -47,6 +47,7 @@ h2, h3 {
 }
 ul li {
     list-style: disc;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    text-transform: initial
 }
 </style>
