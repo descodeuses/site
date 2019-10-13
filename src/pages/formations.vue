@@ -24,7 +24,7 @@ export default {
                 <h2 class="subheading">Contenu de la formation</h2>
                 <p>Nous lançons notre première formation longue en Novembre 2019.</p>
                 <p>Cette formation est <strong>gratuite</strong> et forme au métier de web développeuse.</p>
-                <a href="developpeuse">Voici le contenu de la formation</a>
+                <a href="frontend">Voici le contenu de la formation</a>
             </div>
         </div>
         <div class="row">
@@ -48,4 +48,19 @@ h2 {
     text-align: center;
     color: #312A6B
 }
+h2, .heading {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #312A6B
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #312A6B
+}
+
 </style>
