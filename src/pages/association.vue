@@ -68,98 +68,113 @@ export default {
         <h2 class="heading">L'équipe</h2>
         <div class="row">
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/souad.jpg">
-                        <span class="card-title">Souad <br>
-                            Confondatrice/CEO
-                        </span>
+                        <p class="card-title">Souad <br>
+                        <span>Confondatrice/CEO</span>
+                        </p>
                     </div>
                     <div class="card-content">
                         <i class="fab fa-500px"></i>
                         <p>Je m'assure que chaque nouveau membre comprenne notre mission, j'anime et je coordonne les différents rôles de l'équipe, j'assure les relations publiques, je recherche de nouveaux partenaires, je vais collecter des fonds, je forme les candidates sur plusieurs sujets, je suis la "problem solver" c'est à dire que je trouve des solutions à tous les problèmes !</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">linkedin</a>
+                        <a href="https://www.linkedin.com/in/souad-boutegrabet--8772818a" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/michelson.jpg">
-                        <span class="card-title">Michelson <br>
-                        Cofondateur/CTO
-                        </span>
+                        <p class="card-title">Michelson <br>
+                        <span>Cofondateur/CTO</span>
+                        </p>
                     </div>
                     <div class="card-content">
                         <p>Je suis chargé de la partie technique de Descodeuses et responsable du site web coté front.  J’anime également  des ateliers de formation</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">linkedin</a>
+                        <a href="https://www.linkedin.com/in/michelsonhns/" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/justine.jpg">
-                        <span class="card-title">Justine <br>
-                        CFO
-                        </span>
+                        <p class="card-title">Justine <br>
+                        <span>CFO</span>
+                        </p>
                     </div>
                     <div class="card-content">
                         <p>Je mets en place des budgets, réalise le suivi du P&L, je recherche des financements et des partenariats, je travaille également sur la stratégie de développement de DesCodeuses en France.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">linkedin</a>
+                        <a href="http://linkedin.com/in/justine-cattacin-97824b36" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/azul.jpg">
-                        <span class="card-title">Azul <br>
-                        Project Manager communication</span>
+                        <p class="card-title">Azul <br>
+                        <span>Project Manager communication</span></p>
                     </div>
                     <div class="card-content">
                         <p>Je suis responsable de la communication sur les réseaux sociaux. Je suis toujours disponible pour repondre a vos questions et je gere le developpement de projets pour promouvoir DesCodeuses.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">linkedin</a>
+                        <a href="https://www.linkedin.com/in/azul-stengel-5a2107133/" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/olivier.jpg">
-                        <span class="card-title">Olivier <br>
-                        Project Manager Partenariats</span>
+                        <p class="card-title">Olivier <br>
+                        <span>Project Manager Partenariats</span></p>
                     </div>
                     <div class="card-content">
                         <p>Je développe, gère et anime le parcours d'accompagnement à l'emploi personnalisé qui est à destination des femmes des quartiers prioritaires.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">linkedin</a>
+                        <a href="https://www.linkedin.com/in/olivier-acampora-878793ba" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/nolween.jpg">
-                        <span class="card-title">Nolween <br>
-                        Project Manager Emploi</span>
+                        <p class="card-title">Nolween <br>
+                        <span>Project Manager Emploi</span></p>
                     </div>
                     <div class="card-content">
                         <p>J'accompagne les Apprenantes dans leur recherche de stage ou d'emploi en parallèle de leur formation. J'anime également certains des ateliers individuels ou collectifs tout au long de ce parcours. Pour nous, ce parcours est déterminant dans la réussite de notre mission : faire que chaque apprenante trouve un emploi à l'issue de la formation</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">linkedin</a>
+                        <a href="https://www.linkedin.com/in/nolwenn-cariou-b9501256" target="_blank">linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card left-align">
+                    <div class="card-image">
+                        <img src="@/assets/images/equipe/andrea.jpg">
+                        <p class="card-title">Andrea<br>
+                        <span>Responsable de la conception pédagogique</span></p>
+                    </div>
+                    <div class="card-content">
+                        <p>J’accompagne la création de contenus pédagogiques. Je m’occupe particulièrement de la conception et de l’animation des ateliers de vulgarisation et je développe la stratégie pédagogique du projet.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.linkedin.com/in/andrea-milligan-7381a56a/" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +216,9 @@ ul li, ol li {
     background: #f9b233;
     margin: 0 auto
 }
-
+.card-title span {
+font-size: 16px
+}
 .card h2 {
     background: #f9b233;
     margin: 0;
