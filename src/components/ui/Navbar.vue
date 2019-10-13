@@ -16,7 +16,7 @@ export default {
                 <li><a class="grey-text uppercase" href="formations" data-target="formations">Nos formations</a></li>
                 <li><a class="grey-text uppercase" href="accompagnement" data-target="accompagnement">Accompagnement</a></li>
                 <li><a class=" grey-text" href="association" data-target="association">Descodeuses</a></li>
-                <li><a class=" grey-text" href="aide" data-target="aide">Nous aider<i class="material-icons right"></i></a></li>
+                <!-- <li><a class=" grey-text" href="aide" data-target="aide">Nous aider<i class="material-icons right"></i></a></li> -->
                 <li><a class=" grey-text uppercase" href="https://www.helloasso.com/associations/descodeuses/formulaires/1" target="_blank" data-target="adhesion">Dons <i class="material-icons right"></i></a></li>
             </ul>
         </div>
