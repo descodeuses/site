@@ -10,7 +10,7 @@ export default {
 
 <template>
     <div>
-         <router-view/>
-        <Contact/>
+        <router-view/>
+        
     </div>
 </template>
