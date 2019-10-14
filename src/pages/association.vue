@@ -77,7 +77,7 @@ export default {
                     </div>
                     <div class="card-content">
                         <i class="fab fa-500px"></i>
-                        <p>Je m'assure que chaque nouveau membre comprenne notre mission, j'anime et je coordonne les différents rôles de l'équipe, j'assure les relations publiques, je recherche de nouveaux partenaires, je vais collecter des fonds, je forme les candidates sur plusieurs sujets, je suis la "problem solver" c'est à dire que je trouve des solutions à tous les problèmes !</p>
+                        <p>Je m'assure que chaque nouveau membre comprenne notre mission, j'anime et je coordonne les différents rôles de l'équipe, je recherche de nouveaux partenaires, je vais collecter des fonds.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/souad-boutegrabet--8772818a" target="_blank">linkedin</a>
@@ -100,24 +100,6 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
-                <div class="card left-align">
-                    <div class="card-image">
-                        <img src="@/assets/images/equipe/justine.jpg">
-                        <p class="card-title">Justine <br>
-                        <span>CFO</span>
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <p>Je mets en place des budgets, réalise le suivi du P&L, je recherche des financements et des partenariats, je travaille également sur la stratégie de développement de DesCodeuses en France.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="http://linkedin.com/in/justine-cattacin-97824b36" target="_blank">linkedin</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
             <div class="col s12 m4">
                 <div class="card left-align">
                     <div class="card-image">
