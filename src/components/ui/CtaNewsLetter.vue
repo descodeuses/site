@@ -2,12 +2,14 @@
     <form class="">
         <div class="row">
             <div class="col m4 offset-m1 card">
-                <h2>Inscrivez-vous pour suivre nos actualités</h2>
+                <h2>Des questions ?</h2>
                 <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">E-mail</label>
+                    <!-- <input id="email" type="email" class="validate">
+                    <label for="email">E-mail</label> -->
+                    <p>Envoyez-nous un e-mail au</p>
+                    <a href="mailto:contact@descodeuses.org" target="_blank">contact@descodeuses.org</a>
                 </div>
-                <button class="waves-effect waves-light btn">Envoyer</button>
+                <!-- <button class="waves-effect waves-light btn">Envoyer</button> -->
             </div>
         </div>
     </form>
