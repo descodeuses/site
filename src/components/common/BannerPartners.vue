@@ -5,19 +5,25 @@
                 <img class="responsive-img" src="@/assets/logos/sap.png" alt="">
             </div>
             <div class="col m2">
-                <img class="responsive-img" src="@/assets/logos/laruche_logo.jpg" alt="">
+                <img class="responsive-img" src="@/assets/logos/antropia.png" alt="">
             </div>
             <div class="col m2">
-                <img class="responsive-img" src="@/assets/logos/projet-19.jpg" alt="">
+                <img class="responsive-img" src="@/assets/logos/frenchimpact.png" alt="">
             </div>
-            <div class="col m3 essec">
-                <img class="responsive-img" src="@/assets/logos/logo_antropia_ESSEC.png" alt="">
+             <div class="col m2">
+                <img class="responsive-img" src="@/assets/logos/maisonasso20.png" alt="">
+            </div>
+             <div class="col m2">
+                <img class="responsive-img" src="@/assets/logos/pariscode.png" alt="">
+            </div>
+            <div class="col m2">
+                <img class="responsive-img" src="@/assets/logos/paris.png" alt="">
             </div>
         </div>
     </div>
 </template>
 <style scoped>
-/* .container {
+.container {
     padding: 3rem
 }
 .row {
@@ -27,7 +33,5 @@
     width: 100%;
     filter: grayscale(80)
 }
-.essec {
-    margin-top: 20px
-} */
+
 </style>
