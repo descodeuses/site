@@ -8,9 +8,9 @@
                 <div class="left-align">
                     <p class="bold">Nous proposons des ateliers d'initiation à la programmation et des ateliers de sensibilisation aux opportunites de la Tech</p>
                     <ul class="left-align">
-                        <li><i class="material-icons">alarm</i>Découverte de métiers du numériques</li>
-                        <li><i class="material-icons">alarm</i>Création de votre première page web</li>
-                        <li><i class="material-icons">alarm</i>Les outils de collaboration en ligne (slack, Google Drive)</li>
+                        <li><i class="material-icons">alarm</i>Découverte de métiers du numérique.</li>
+                        <li><i class="material-icons">alarm</i>Création de votre première page web.</li>
+                        <li><i class="material-icons">alarm</i>Les outils de collaboration en ligne (slack, Google Drive).</li>
                     </ul>
                 </div>
             </div>
@@ -19,9 +19,9 @@
                     <h2 class="white-text">former</h2>                    
                 </div>
                 <div class="left-align">
-                    <p class="bold">Nous formons pendant 6 mois au métier de developpeuse front-end</p>
+                    <p class="bold">Nous formons pendant 6 mois au métier de développeuse Front-End</p>
                     <ul>
-                        <li><i class="material-icons">code</i>Formez-vous aux compétences techniques front-end skills</li>
+                        <li><i class="material-icons">code</i>Formez-vous aux compétences techniques Front-End skills</li>
                         <li><i class="material-icons">code</i>Formez-vous à la méthode agile</li>
                         <li><i class="material-icons">code</i>Formez-vous aux compétences transversales</li>
                     </ul>
@@ -34,8 +34,8 @@
                 <div class="left-align">
                     <p class="bold">Nous accompagnons chaque apprenante vers l'emploi:</p>
                     <ul>
-                        <li><i class="material-icons">school</i>En proposant des ateliers collectifs favorisant l'échange et le partage d'expérience </li>
-                        <li><i class="material-icons">school</i>En faisant des ateliers et coaching individuels sur-mesure (définir son parcours professionnel, adapter sa recherche d'emploi, préparer un entretien…)</li>
+                        <li><i class="material-icons">work</i>En proposant des ateliers collectifs favorisant l'échange et le partage d'expérience </li>
+                        <li><i class="material-icons">work</i>En faisant des ateliers et coaching individuels sur-mesure (définir son parcours professionnel, adapter sa recherche d'emploi, préparer un entretien…)</li>
                     </ul>
                 </div>
             </div>
