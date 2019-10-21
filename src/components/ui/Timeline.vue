@@ -13,7 +13,7 @@
                 </div>
 				<div class="timeline-content">
 					<h2>Pré-selection</h2>
-					<p>Démarrage de la formation gratuite d'initiation a la programmation.</p>
+					<p>Démarrage de la formation gratuite d'initiation à la programmation.</p>
 				</div>
 			</div>
 
@@ -22,7 +22,7 @@
 				</div>
 				<div class="timeline-content right">
 					<h2>Formation</h2>
-					<p>Demarrage du parcours pendant 6 mois, rythme intensif avec self-learning et projets collectifs.</p>
+					<p>Démarrage du parcours pendant 6 mois, rythme intensif avec self-learning et projets collectifs.</p>
 				</div>
 			</div>
 
@@ -32,7 +32,7 @@
 				</div>
 				<div class="timeline-content">
 					<h2>Accompagnement</h2>
-					<p>tout au long du parcours, les apprenantes et les mentors travaillent ensemble a l'élaboration de projets.</p>
+					<p>Tout au long du parcours, les apprenantes et les mentors travaillent ensemble à l'élaboration de projets.</p>
                 </div>
 			</div>
 			
@@ -50,7 +50,7 @@
 				</div>
 				<div class="timeline-content">
 					<h2>Action</h2>
-					<p>Coaching personnalisé pour toutes questions sur l'emploi, les compétences et le marché.</p>
+					<p>Coaching personnalisé pour toute question sur l'emploi, les compétences et le marché.</p>
                 </div>
 			</div>
 			<div class="timeline-item">
