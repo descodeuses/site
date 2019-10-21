@@ -6,7 +6,7 @@
                 <div class="input-field col s12">
                     <!-- <input id="email" type="email" class="validate">
                     <label for="email">E-mail</label> -->
-                    <p>Envoyez-nous un e-mail au</p>
+                    <p>contactez-nous</p>
                     <a href="mailto:contact@descodeuses.org" target="_blank">contact@descodeuses.org</a>
                 </div>
                 <!-- <button class="waves-effect waves-light btn">Envoyer</button> -->
