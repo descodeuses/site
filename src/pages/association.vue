@@ -24,7 +24,7 @@ export default {
         <div class="row">
             <div class="col m5 card offset-m1">
                 <h2>Vision</h2>
-                <p class="content">Toutes les femmes indépendemment de leur origine social ont accès aux métiers qui définissent le monde de demain. </p>
+                <p class="content">Toutes les femmes indépendamment de leur origine social sociale peuvent accéder aux métiers qui définissent le monde de demain. </p>
             </div>
             <div class="col m5 card">
                 <h2>Missions</h2>
@@ -35,9 +35,9 @@ export default {
             <div class="col m8 offset-m2">
                 <h2 class="center-align">Objectifs</h2>
                 <ol>
-                    <li>Sensibiliser les femmes aux métiers en besoin en compétences techniques par des ateliers d’initiation à la programmation.</li>
-                    <li>Former les femmes par un parcours complet de 6 mois, à des métiers techniques (développement web, design, traitement de la data)</li>
-                    <li>Accompagner les femmes dans leur recherche d’emploi en les préparant à la valorisation de leurs compétences et à la rencontre avec des Entreprises recruteuses</li>
+                    <li>Sensibiliser les femmes aux métiers demandeurs de compétences techniques par des ateliers d’initiation à la programmation.</li>
+                    <li>Former les femmes, par un parcours complet de 6 mois, à des métiers techniques (développement web, design, traitement de la data).</li>
+                    <li>Accompagner les femmes dans leur recherche d’emploi en les préparant à la valorisation de leurs compétences et à la rencontre avec des Entreprises recruteuses.</li>
                     <li>Favoriser l’autonomie numérique et le développement de l’estime de soi des femmes des quartiers par des ateliers de coaching et de mentorat.</li>
                 </ol>
             </div>
@@ -46,15 +46,15 @@ export default {
              <div class="col m4 offset-m1 left-align">
                 <h2 class="">Nos principes d'action</h2>
                 <ul class="left-align">
-                    <li>Respecter le parcours social de chaque femme</li>
-                    <li>Promouvoir l'égalité femmes / hommes</li>
-                    <li>Lutter contre les inégalités de genre et de territoires</li>
+                    <li>Respecter le parcours social de chaque femme.</li>
+                    <li>Promouvoir l'égalité femmes / hommes.</li>
+                    <li>Lutter contre les inégalités de genre et de territoire.</li>
                 </ul>
                  <h2>Notre offre</h2>
                 <ol>
-                    <li>Accès à nos ateliers courts de sensibilisation et de formation au code numérique</li>
-                    <li>Accès à notre formation gratuite de 6 mois de développeuse web</li>
-                    <li>Accès à un accompagnement personnalisé jusqu'à l'emploi</li>
+                    <li>Accès à nos ateliers courts de sensibilisation et de formation au code numérique.</li>
+                    <li>Accès à notre formation gratuite de 6 mois de développeuse web.</li>
+                    <li>Accès à un accompagnement personnalisé jusqu'à l'emploi.</li>
                     <li>Accès à des ateliers d'empowerment, de coaching, à des conférences avec des professionnels.</li>
                 </ol>
             </div>
@@ -72,7 +72,7 @@ export default {
                     <div class="card-image">
                         <img src="@/assets/images/equipe/souad.jpg">
                         <p class="card-title">Souad <br>
-                        <span>Confondatrice/CEO</span>
+                        <span>Cofondatrice / CEO</span>
                         </p>
                     </div>
                     <div class="card-content">
@@ -108,7 +108,7 @@ export default {
                         <span>Project Manager communication</span></p>
                     </div>
                     <div class="card-content">
-                        <p>Je suis responsable de la communication sur les réseaux sociaux. Je suis toujours disponible pour repondre a vos questions et je gere le developpement de projets pour promouvoir DesCodeuses.</p>
+                        <p>Je suis responsable de la communication sur les réseaux sociaux. Je suis toujours disponible  pour répondre à vos questions et je gère le développement de projets pour promouvoir DesCodeuses.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/azul-stengel-5a2107133/" target="_blank">linkedin</a>
