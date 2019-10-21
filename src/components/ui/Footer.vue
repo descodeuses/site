@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <p class="grey-text text-lighten-4">DesCodeuses est une association loi 1901 sur le numéro W751242699.</p>
+                    <p class="grey-text text-lighten-4">DesCodeuses est une association loi 1901 W751242699.</p>
                     <p>SIRET 84103338400014</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
