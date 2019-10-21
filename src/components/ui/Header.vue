@@ -2,7 +2,7 @@
     <header class="row">
         <div class="col m4 offset-m8 col s6 offset-6">
             <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez les nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
-            <p class="white-text">Bientôt, l'ouverture des candidatures en-ligne</p>
+            <p class="white-text">Bientôt, l'ouverture des candidatures en ligne</p>
         </div>
     </header>
 </template>
