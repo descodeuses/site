@@ -4,6 +4,8 @@ import Experiences from '@/components/forms/inscription/Experiences.vue'
 import Motivations from '@/components/forms/inscription/Motivations.vue'
 import { updateM } from '@/utils/materialize'
 import BaseButton from '@/components/elements/Button.vue'
+import Modal from '@/components/elements/Modal.vue'
+import Loader from '@/components/elements/Loader.vue'
 
 export default {
 	data() {
@@ -12,6 +14,8 @@ export default {
 		}
 	},
 	components: {
+		Loader,
+		Modal,
 		PersonnalInfos,
 		Motivations,
 		Experiences,
@@ -23,18 +27,21 @@ export default {
 			updateM.call(this)
 		},
 		nextStep() {
-			if (this.step == 3) return this.submit
+			if (this.step == 3) return this.submit()
 			this.step++
 			updateM.call(this)
+		},
+		redirect() {
+			this.$router.push('/')
 		},
 		submit() {
 			this.$axios
 				.post('/register', this.$store.getters['register/form'])
 				.then(res => {
-					// TO DO
+					this.$refs.modal.open()
 				})
 				.catch(err => {
-					// TO DO
+					this.$refs.errorModal.open()
 				})
 		}
 	}
@@ -43,7 +50,17 @@ export default {
 
 <template>
 	<div class="container">
-		<router-view />
+		<Modal
+			:header="'Inscription pris en compte'"
+			:subheader="'Nous allons étudier votre candidature !'"
+			:validate="redirect"
+			ref="modal"
+		/>
+		<Modal
+			:header="'Une erreur est survenue'"
+			:subheader="'Veuillez réessayer plus tard.'"
+			ref="errorModal"
+		/>
 		<div class="col s8 offset-s2" v-if="step === 0">
 			<h1 class="title">candidatures</h1>
 			<p

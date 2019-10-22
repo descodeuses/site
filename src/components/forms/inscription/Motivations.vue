@@ -1,28 +1,35 @@
 <script>
-import Modal from '@/components/elements/Modal.vue'
-import Loader from '@/components/elements/Loader.vue'
 import BaseButton from '@/components/elements/Button.vue'
+let reader = new FileReader()
 
 export default {
 	components: {
-		Modal,
-		Loader,
 		BaseButton
 	},
 	data() {
 		return {
 			motivation: {},
-			loading: false,
+			loading: false
 		}
 	},
 	created() {
 		let form = this.$store.getters['register/form']
 		if (form.motivations) this.motivation = form.motivations
+		reader.onload = (e) => {
+			this.motivation.resume = e.target.result
+		}
 	},
 	methods: {
 		goBack() {
 			this.$store.dispatch('register/updateMotivation', this.motivation)
 			this.$emit('prevStep')
+		},
+		saveFile() {
+			let file = this.$refs.file.files[0]
+
+			if (file) {
+				reader.readAsText(file)
+			}
 		},
 		validate() {
 			this.$validator.validateAll().then(result => {
@@ -40,7 +47,7 @@ export default {
 		<h1 class="title is-uppercase">Motivations</h1>
 		<span class="help-text">* les champs sont obligatoires</span>
 		<div class="row left-align">
-			<Loader v-if="loading"/>
+			<Loader v-if="loading" />
 			<h2>Pré-requis obligatoires :</h2>
 			<p>Pour évaluer votre motivation, nous allons regarder que vous avez terminé les parcours que nous vous conseillons sur OPC. Voici comment faire :</p>
 			<ol>
@@ -178,10 +185,17 @@ export default {
 						<h2>Votre CV</h2>
 						<div class="file">
 							<label class="file-label">
-								<input class="file-input" type="file" name="resume" />
+								<input
+									@change="saveFile"
+									class="file-input"
+									type="file"
+									name="resume"
+									accept="application/pdf"
+									ref="file"
+								/>
 							</label>
 						</div>
-						<p class="help-text error">Il est obligatoire avoir un CV</p>
+						<!--<p class="help-text error">Il est obligatoire avoir un CV</p>-->
 					</div>
 				</div>
 			</form>
@@ -190,11 +204,6 @@ export default {
 				<BaseButton :func="validate">suivant</BaseButton>
 			</div>
 		</div>
-		<Modal
-			:header="'Inscription pris en compte'"
-			:subheader="'Nous allons étudier votre candidature !'"
-			:validate="redirect"
-			ref="modal"/>
 	</div>
 </template>
 <style scoped>
