@@ -156,7 +156,7 @@ export default {
 											type="radio"
 											id="advancedFrench"
 											v-model="exp.languageLevel.french"
-											value="advancedFrench"
+											value="advanced"
 											name="languageLevelFrench"
 										/>
 										<span>Avancé</span>
@@ -168,7 +168,7 @@ export default {
 											type="radio"
 											id="intermediaryFrench"
 											v-model="exp.languageLevel.french"
-											value="intermediaryFrench"
+											value="intermediary"
 											name="languageLevelFrench"
 										/>
 										<span>Intermedière</span>
@@ -180,7 +180,7 @@ export default {
 											type="radio"
 											id="beginningFrench"
 											v-model="exp.languageLevel.french"
-											value="beginningFrench"
+											value="beginning"
 											name="languageLevelFrench"
 										/>
 										<span>Débutant.e</span>
@@ -203,7 +203,7 @@ export default {
 											type="radio"
 											id="advancedEnglish"
 											v-model="exp.languageLevel.english"
-											value="advancedEnglish"
+											value="advanced"
 											name="languageLevelEnglish"
 										/>
 										<span>Avancé</span>
@@ -215,7 +215,7 @@ export default {
 											type="radio"
 											id="intermediaryEnglish"
 											v-model="exp.languageLevel.english"
-											value="intermediaryEnglish"
+											value="intermediary"
 											name="languageLevelEnglish"
 										/>
 										<span>Intermedière</span>
@@ -227,7 +227,7 @@ export default {
 											type="radio"
 											id="beginningEnglish"
 											v-model="exp.languageLevel.english"
-											value="beginningEnglish"
+											value="beginning"
 											name="languageLevelEnglish"
 										/>
 										<span>Débutant.e</span>
@@ -257,7 +257,7 @@ export default {
 											id="advancedArabic"
 											v-model="exp.languageLevel.arabic"
 											name="languageLevelArabic"
-											value="advancedArabic"
+											value="advanced"
 										/>
 										<span>Avancé</span>
 									</label>
@@ -269,7 +269,7 @@ export default {
 											id="intermediaryArabic"
 											v-model="exp.languageLevel.arabic"
 											name="languageLevelArabic"
-											value="intermediaryArabic"
+											value="intermediary"
 										/>
 										<span>Intermedière</span>
 									</label>
@@ -281,7 +281,7 @@ export default {
 											id="beginningArabic"
 											v-model="exp.languageLevel.arabic"
 											name="languageLevelArabic"
-											value="beginningArabic"
+											value="beginning"
 										/>
 										<span>Débutant.e</span>
 									</label>
@@ -319,7 +319,7 @@ export default {
 											id="advancedOther"
 											v-model="exp.languageLevel.other"
 											name="languageLevelOther"
-											value="advancedOther"
+											value="advanced"
 										/>
 										<span>Avancé</span>
 									</label>
@@ -331,7 +331,7 @@ export default {
 											id="intermediaryOther"
 											v-model="exp.languageLevel.other"
 											name="languageLevelOther"
-											value="intermediaryOther"
+											value="intermediary"
 										/>
 										<span>Intermedière</span>
 									</label>
@@ -343,7 +343,7 @@ export default {
 											id="beginningOther"
 											v-model="exp.languageLevel.other"
 											name="languageLevelOther"
-											value="beginningOther"
+											value="beginning"
 										/>
 										<span>Débutant.e</span>
 									</label>
