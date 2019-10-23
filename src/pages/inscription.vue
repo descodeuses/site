@@ -35,8 +35,9 @@ export default {
 			this.$router.push('/')
 		},
 		submit() {
+			console.log(JSON.stringify(this.$store.getters['register/form']) + "")
 			this.$axios
-				.post('/register', this.$store.getters['register/form'])
+				.post('http://localhost:3000/register', this.$store.getters['register/form'])
 				.then(res => {
 					this.$refs.modal.open()
 				})
