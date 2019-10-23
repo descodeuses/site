@@ -26,9 +26,8 @@ export default {
 		},
 		saveFile() {
 			let file = this.$refs.file.files[0]
-
 			if (file) {
-				reader.readAsText(file)
+				reader.readAsDataURL(file)
 			}
 		},
 		validate() {
