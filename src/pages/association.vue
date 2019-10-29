@@ -77,7 +77,7 @@ export default {
                     </div>
                     <div class="card-content">
                         <i class="fab fa-500px"></i>
-                        <p>Je m'assure que chaque nouveau membre comprenne notre mission, j'anime et je coordonne les différents rôles de l'équipe, je recherche de nouveaux partenaires, je vais collecter des fonds.</p>
+                        <p>Je m'assure que chaque nouveau membre comprenne notre mission, j'anime et je coordonne les différents rôles et activités de l'équipe, je recherche de nouveaux partenaires et je vais collecter des fonds.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/souad-boutegrabet--8772818a" target="_blank">linkedin</a>
@@ -93,7 +93,7 @@ export default {
                         </p>
                     </div>
                     <div class="card-content">
-                        <p>Je suis chargé de la partie technique de Descodeuses et responsable du site web coté front.  J’anime également  des ateliers de formation</p>
+                        <p>Je suis chargé de la partie technique de Descodeuses et responsable du site web coté front. J’anime également des ateliers de découverte de la programmation ainsi que des ateliers pendant la formation.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/michelsonhns/" target="_blank">linkedin</a>
@@ -108,7 +108,7 @@ export default {
                         <span>Project Manager communication</span></p>
                     </div>
                     <div class="card-content">
-                        <p>Je suis responsable de la communication sur les réseaux sociaux. Je suis toujours disponible  pour répondre à vos questions et je gère le développement de projets pour promouvoir DesCodeuses.</p>
+                        <p>Je suis responsable de la communication sur les réseaux sociaux. Je suis toujours disponible pour répondre à vos questions et je gère le développement de projets pour promouvoir DesCodeuses.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/azul-stengel-5a2107133/" target="_blank">linkedin</a>
@@ -123,7 +123,7 @@ export default {
                         <span>Project Manager Partenariats</span></p>
                     </div>
                     <div class="card-content">
-                        <p>Je développe, gère et anime le parcours d'accompagnement à l'emploi personnalisé qui est à destination des femmes des quartiers prioritaires.</p>
+                        <p>Je développe, gère et anime le parcours d'accompagnement à l'emploi personnalisé qui est à destination des femmes des quartiers prioritaires. Notre objectif est que chacune trouve un emploi site à la formation.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/olivier-acampora-878793ba" target="_blank">linkedin</a>
@@ -138,7 +138,7 @@ export default {
                         <span>Project Manager Emploi</span></p>
                     </div>
                     <div class="card-content">
-                        <p>J'accompagne les Apprenantes dans leur recherche de stage ou d'emploi en parallèle de leur formation. J'anime également certains des ateliers individuels ou collectifs tout au long de ce parcours. Pour nous, ce parcours est déterminant dans la réussite de notre mission : faire que chaque apprenante trouve un emploi à l'issue de la formation</p>
+                        <p>J'accompagne les Apprenantes dans leur recherche de stage et/ou d'emploi en parallèle de leur formation. Pour nous, ce parcours d'accompagnement est déterminant dans la réussite de notre mission.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/nolwenn-cariou-b9501256" target="_blank">linkedin</a>
@@ -207,7 +207,9 @@ font-size: 16px
     padding: 16px;
     color: #FFF
 }
-
+.card-content {
+    padding-bottom: 1em;
+}
 .content {
     padding: 16px
 }
