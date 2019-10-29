@@ -134,7 +134,7 @@ export default {
 					<span class="helper-text" data-error="Ce champs obligatoire"></span>
 				</div>
 				<div class="row left-align">
-					<div class="col s4">
+					<div class="col m4 s6">
 						<h2>Avez-vous un ordinateur ? *</h2>
 						<div class="control">
 							<label>
@@ -157,7 +157,7 @@ export default {
 						</div>
 						<span class="helper-text" data-error="Ce champs obligatoire"></span>
 					</div>
-					<div class="col s4 left-align">
+					<div class="col m4 s6 left-align">
 						<h2>Avez-vous participé à un atelier d’initiation à la programmation ?</h2>
 						<div class="control">
 							<label>
@@ -180,7 +180,7 @@ export default {
 						</div>
 						<span class="helper-text" data-error="Ce champs obligatoire"></span>
 					</div>
-					<div class="col s4 left-align">
+					<div class="col m4 s6 left-align">
 						<h2>Votre CV</h2>
 						<div class="file">
 							<label class="file-label">
