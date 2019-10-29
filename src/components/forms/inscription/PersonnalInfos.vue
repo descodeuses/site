@@ -36,12 +36,12 @@ export default {
 }
 </script>
 <template>
-    <div class="col s8 offset-s2">
+    <div class="col m8 s12 offset-m2">
         <h1 class="center-align">Renseignements administratifs</h1>
         <div class="row">
             <form class="">
                 <div class="row">
-                    <div class="input-field col s2">
+                    <div class="input-field col m2 s4">
                         <select
                             v-model="administration_infos.gender"
                             name="gender"
@@ -55,7 +55,7 @@ export default {
                         </select>
                         <span class="helper-text error" v-if="errors.has('gender')">obligatoire</span>
                     </div>
-                    <div class="input-field col s5">
+                    <div class="input-field col m5 s8">
                         <label :class="{active: administration_infos.first_name}" for="first_name">Prénom *</label>
                         <input
                             v-model="administration_infos.first_name"
@@ -66,7 +66,7 @@ export default {
                             :class="{invalid: errors.has('first_name')}"/>
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
-                    <div class="input-field col s5">
+                    <div class="input-field col m5 s12">
                         <label :class="{active: administration_infos.last_name}" for="last_name">Nom *</label>
                         <input
                             v-model="administration_infos.last_name"
@@ -104,7 +104,7 @@ export default {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s8">
+                    <div class="input-field col m8 s12">
                         <label :class="{active: administration_infos.address}" for="address">Adresse postale complète *</label>
                         <input
                             v-model="administration_infos.address"
@@ -115,7 +115,7 @@ export default {
                             :class="{invalid: errors.has('address')}"/>
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
-                    <div class="input-field col s4">
+                    <div class="input-field col m4 s12">
                         <label :class="{active: administration_infos.addresscomplementaire}" for="addresscomplementaire">Complement d'adresse</label>
                         <input
                             v-model="administration_infos.addresscomplementaire"
@@ -126,7 +126,7 @@ export default {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col m6 s6">
                         <label :class="{active: administration_infos.postcode}" for="postcode">Code postal *</label>
                         <input
                             v-model="administration_infos.postcode"
@@ -137,7 +137,7 @@ export default {
                             :class="{invalid: errors.has('postcode')}"/>
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
-                    <div class="input-field col s6">
+                    <div class="input-field col m6 s6">
                         <label :class="{active: administration_infos.city}" for="city">Ville *</label>
                         <input
                             v-model="administration_infos.city"
@@ -150,7 +150,7 @@ export default {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6 ">
+                    <div class="input-field col m6 s12">
                         <label :class="{active: administration_infos.telephone}" for="telephone">Téléphone *</label>
                         <input
                             v-model="administration_infos.telephone"
@@ -161,7 +161,7 @@ export default {
                             :class="{invalid: errors.has('telephone')}"/>
                         <span class="helper-text" data-error="Ce champs obligatoire"></span>
                     </div>
-                    <div class="input-field col s6 ">
+                    <div class="input-field col m6 s12">
                         <label :class="{active: administration_infos.email}" for="email">Email *</label>
                         <input
                             v-model="administration_infos.email"
