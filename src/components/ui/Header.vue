@@ -1,8 +1,8 @@
 <template>
     <header class="row">
-        <div class="col m4 offset-m8 col s6 offset-6">
+        <div class="col m4 offset-m8 col s8 offset-s2 offset-6">
             <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez les nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
-            <p class="white-text">Bientôt, l'ouverture des candidatures en ligne</p>
+            <a class="waves-effect btn" href="inscription" data-target="inscription">Je postule</a>
         </div>
     </header>
 </template>
@@ -23,7 +23,7 @@ h2 {
 }
 
 .col {
-    height: 50vh;
+    height: 55vh;
     background: #312783;
     padding: 10px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -40,7 +40,7 @@ h2 {
 
 @media screen and (max-width: 640px) {
     h2 {
-        font-size: 18px;
+        font-size: 25px;
         margin: 0;
         padding-top: 40px;
         padding-bottom: 20px;
