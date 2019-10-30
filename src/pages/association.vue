@@ -45,11 +45,11 @@ export default {
         <div class="row">
              <div class="col m4 offset-m1 left-align">
                 <h2 class="">Nos principes d'action</h2>
-                <ul class="left-align">
+                <ol class="action">
                     <li>Respecter le parcours social de chaque femme.</li>
                     <li>Promouvoir l'égalité femmes / hommes.</li>
                     <li>Lutter contre les inégalités de genre et de territoire.</li>
-                </ul>
+                </ol>
                  <h2>Notre offre</h2>
                 <ol>
                     <li>Accès à nos ateliers courts de sensibilisation et de formation au code numérique.</li>
@@ -134,7 +134,7 @@ export default {
                 <div class="card left-align">
                     <div class="card-image">
                         <img src="@/assets/images/equipe/nolween.jpg">
-                        <p class="card-title">Nolween <br>
+                        <p class="card-title">Nolwenn <br>
                         <span>Project Manager Emploi</span></p>
                     </div>
                     <div class="card-content">
@@ -187,7 +187,7 @@ header {
 
 ul li, ol li {
     text-transform: initial;
-    padding: 10px
+    padding-bottom: 10px
 }
 
 .card {
@@ -209,9 +209,11 @@ font-size: 16px
 }
 .card-content {
     padding-bottom: 1em;
+    min-height: 149px;
 }
 .content {
-    padding: 16px
+    padding: 16px;
+    min-height: 98px;
 }
 .card-action a {
     color: #0077B5 !important;
@@ -219,5 +221,9 @@ font-size: 16px
 
 img {
     width: 100%
+}
+
+.action {
+    list-style: disc
 }
 </style>
