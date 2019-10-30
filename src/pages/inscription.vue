@@ -37,7 +37,7 @@ export default {
 		submit() {
 			console.log(JSON.stringify(this.$store.getters['register/form']) + "")
 			this.$axios
-				.post('http://localhost:3000/register', this.$store.getters['register/form'])
+				.post('http://51.91.158.134:3000/register', this.$store.getters['register/form'])
 				.then(res => {
 					this.$refs.modal.open()
 				})
