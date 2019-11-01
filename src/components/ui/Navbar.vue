@@ -1,17 +1,19 @@
 <script>
 export default {
-    
+    mounted() {
+        M.Sidenav.init(this.$el.querySelectorAll('.sidenav'), {});
+        // M.FormSelect.init(this.$el.querySelectorAll('select'), {})
+    }
 }
 </script>
 
 <template>
 <div>
-    <a href="/">
-        <img src="@/assets/logos/logo-descodeuses.png" alt="">
-    </a>
-    <nav >
-        <div class="nav-wrapper white ">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <nav class="white">
+        <div class="nav-wrapper">
+            <a class="brand-logo" href="/"><img src="@/assets/logos/logo-descodeuses.png" alt=""></a>
+            <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
                 <li><a class="grey-text uppercase" href="/"><i class="material-icons">home</i></a></li>
                 <li><a class="grey-text uppercase" href="formations" data-target="formations">Nos formations</a></li>
                 <li><a class="grey-text uppercase" href="accompagnement" data-target="accompagnement">Accompagnement</a></li>
@@ -19,21 +21,35 @@ export default {
                 <!-- <li><a class=" grey-text" href="aide" data-target="aide">Nous aider<i class="material-icons right"></i></a></li> -->
                 <li><a class=" grey-text uppercase" href="https://www.helloasso.com/associations/descodeuses/formulaires/1" target="_blank" data-target="adhesion">Dons <i class="material-icons right"></i></a></li>
             </ul>
-        </div>
+            </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="grey-text uppercase" href="/"><i class="material-icons">home</i></a></li>
+        <li><a class="grey-text uppercase" href="formations" data-target="formations">Nos formations</a></li>
+        <li><a class="grey-text uppercase" href="accompagnement" data-target="accompagnement">Accompagnement</a></li>
+        <li><a class=" grey-text" href="association" data-target="association">Descodeuses</a></li>
+        <!-- <li><a class=" grey-text" href="aide" data-target="aide">Nous aider<i class="material-icons right"></i></a></li> -->
+        <li><a class=" grey-text uppercase" href="https://www.helloasso.com/associations/descodeuses/formulaires/1" target="_blank" data-target="adhesion">Dons <i class="material-icons right"></i></a></li>
+    </ul>
 </div>
 </template>
 <style>
 nav {
-    box-shadow: none !important
-}
-ul li {
-    text-transform: uppercase;
-    cursor: pointer;
+    background: white;
 }
 img {
-    width: 300px;
-    padding-top: 15px
+    width: 200px;
+    margin: 5px 0;
 }
-
+.brand-logo {
+    left: 5%;
+    top: 5px
+}
+nav .sidenav-trigger i {
+    color: #000
+}
+.sidenav {
+    text-align: left
+}
 </style>
