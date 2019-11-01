@@ -32,3 +32,13 @@ export default {
         </div>
     </div>
 </template>
+
+<style scoped>
+.heading {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #312A6B;
+}
+</style>
