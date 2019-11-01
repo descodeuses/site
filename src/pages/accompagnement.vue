@@ -1,13 +1,13 @@
 <template>
     <div>
         <router-view/>
-        <div class="row">
-            <header class="header-page">
-                <h2 class="heading">Notre expertise emploi</h2>
-            </header>
-        </div>
-        <div class="row">
-            <div class="col m8 offset-m2 left-align">
+        <div class="row coach">
+            <div class="col m5 offset-m1 left-align card">
+                <div class="row">
+                    <header class="header-page">
+                        <h2 class="heading">Notre expertise emploi</h2>
+                    </header>
+                </div>
                 <p>Nous accompagnons les femmes dans leur recherche d’emploi en les préparant à la valorisation de leurs compétences et à la rencontre d’entreprises susceptibles de les recruter. </p>
                 <p>Pour cela , nous proposons 14 ateliers d’une durée de 4 heures tout au long de la formation et des entretiens individuels à la demande par nos expert (e) s de l’emploi.</p>
                 <p>Chaque femme bénéficie d'un accompagnement et d’un suivi personnalisé et ce,  jusqu'à l’obtention d’un emploi dans le numérique. </p>
@@ -50,4 +50,15 @@ ul li {
     padding-bottom: 16px;
     text-transform: initial
 }
+.coach {
+    padding: 100px 0;
+    background-image: url("./..//assets/images/photos/descodeuses-femmes-codent-15.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 100%
+}
+.card {
+    padding: 40px !important
+}
+
 </style>
