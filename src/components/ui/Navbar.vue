@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-<div>
+<div class="navbar-fixed">
     <nav class="white">
         <div class="nav-wrapper">
             <a class="brand-logo" href="/"><img src="@/assets/logos/logo-descodeuses.png" alt=""></a>
