@@ -196,7 +196,8 @@ ul li, ol li {
 }
 .card-title {
     background: #f9b233;
-    margin: 0 auto
+    margin: 0 auto;
+    min-width: 363px;
 }
 .card-title span {
 font-size: 16px
