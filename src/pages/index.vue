@@ -7,6 +7,8 @@ import BannerActions from '@/components/common/BannerActions.vue'
 import BannerPartners from '@/components/common/BannerPartners.vue'
 import BannerSchedule from '@/components/common/BannerSchedule.vue'
 import BannerActivities from '@/components/common/BannerActivities.vue'
+import Newsletter from '@/components/forms/Newsletter.vue'
+
 import 'materialize-css'
 
 export default {
@@ -19,7 +21,8 @@ export default {
         BannerPartners,
         BannerSchedule,
         CtaNewsLetter,
-        BannerActivities
+        BannerActivities,
+        Newsletter
     },
     data(){
         return {
@@ -41,6 +44,26 @@ export default {
         <BannerPartners/>
         <BannerActions/>
         <!-- <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" /> -->
-        <CtaNewsLetter/>
+        <div class="row cta">
+            <div class="col m4 offset-m1 card">
+                <Newsletter/>
+                
+            </div>
+
+        </div>
+        <!-- <CtaNewsLetter/> -->
+        
     </div>
 </template>
+<style scoped>
+.cta {
+    padding: 100px 0;
+    background-image: url("./..//assets/images/photos/descodeuses-femmes-codent-07.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 100%
+}
+.card {
+    padding: 40px !important
+}
+</style>
