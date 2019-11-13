@@ -181,7 +181,8 @@ export default {
 						<span class="helper-text" data-error="Ce champs obligatoire"></span>
 					</div>
 					<div class="col m4 s6 left-align">
-						<h2>Votre CV</h2>
+						<h2>Votre CV <br><span class="help">(uniquement en pdf)</span></h2>
+						
 						<div class="file">
 							<label class="file-label">
 								<input
@@ -218,5 +219,8 @@ h2 {
 }
 .error {
 	color: red;
+}
+.help {
+	font-size: 12px;
 }
 </style>
