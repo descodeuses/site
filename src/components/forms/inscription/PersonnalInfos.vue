@@ -80,7 +80,7 @@ export default {
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <label :class="{active: administration_infos.birthday}" for="birthday">Date de naissance JJ/MM/AAAA</label>
+                        <label :class="{active: administration_infos.birthday}" for="birthday">Date de naissance</label>
                         <input
                             v-model="administration_infos.birthday"
                             name="birthday"
@@ -88,7 +88,7 @@ export default {
                             type="text"
                             v-validate="'required|date_format:dd/MM/yyyy'"
                             :class="{invalid: errors.has('birthday')}"/>
-                        <span class="helper-text" data-error="Ce champs obligatoire"></span>
+                        <span class="helper-text" data-error="Ce champs obligatoire">JJ/MM/AAAA</span>
                     </div>
                     <div class="input-field col s6">
                         <label :class="{active: administration_infos.nationality}" for="nationality">Nationalité *</label>
@@ -174,8 +174,8 @@ export default {
                     </div>
                 </div>
                 <div class="row">
-                    <h2 class="">Statut au moment de votre candidature *</h2>
-                    <p class="help">plusieur choix possible</p>
+                    <h2 class="">Statut au moment de votre candidature * <span class="help">(plusieur choix possible)</span></h2>
+                    <p class="help"></p>
                     <br>
                     <div class="row">
                         <div class="col s6">
@@ -381,5 +381,9 @@ h2 {
     font-weight: bold;
     text-transform: uppercase
 }
-
+.help {
+    text-transform: initial;
+    font-size: 14px;
+    font-weight: normal
+}
 </style>
