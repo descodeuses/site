@@ -1,8 +1,8 @@
 <template>
     <header class="row">
         <div class="col m4 offset-m8 col s8 offset-s2 offset-6">
-            <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez les nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
-            <a class="waves-effect btn" href="inscription" data-target="inscription">Je postule</a>
+            <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez de nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
+            <a class="waves-effect btn-large" href="inscription" data-target="inscription">Je postule</a>
         </div>
     </header>
 </template>
@@ -31,8 +31,9 @@ h2 {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.btn {
-    background: #F9B233
+.btn-large {
+    background: #F9B233;
+    font-weight: bold;
 }
 .yellowdeuse {
     color: #F9B233
