@@ -54,4 +54,7 @@ export default {
     color: #312A6B;
 }
 
+.uppercase {
+    text-transform: uppercase
+}
 </style>
