@@ -63,7 +63,7 @@ export default {
 			ref="errorModal"
 		/>
 		<div class="col s8 offset-s2" v-if="step === 0">
-			<h1 class="title">candidatures</h1>
+			<h1 class="title uppercase">candidatures</h1>
 			<p
 				class="left-align"
 			>Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par descodeuses.org pour le suivi des candidatures à nos formations, ainsi qu'au suivi administratif et pédagogique si vous êtes retenu.e.s pour suivre nos formations. Elles sont conservées pendant 3 ans et sont destinées à la Direction de la Formation, de l'ingénierie et des Partenariats, ainsi qu'aux directions territoriales.</p>
@@ -96,4 +96,20 @@ export default {
 	</div>
 </template>
 <style scoped>
+h1 {
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.error {
+	color: red;
+}
+.help {
+	font-size: 12px;
+}
 </style>
