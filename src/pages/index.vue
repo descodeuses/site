@@ -46,7 +46,7 @@ export default {
         <!-- <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" /> -->
         <div class="row cta">
             <div class="col m4 offset-m1 card">
-                <Newsletter/>
+                <!-- <Newsletter/> -->
                 
             </div>
 
