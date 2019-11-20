@@ -10,25 +10,29 @@ export default {
         <div class="row">
             <header>
                 <div class="col m8 offset-m2 white back">
-                    <h2>Une start-up sociale.</h2>
+                    <h2>Une association engagée, <br/> au service des femmes et des territoires.</h2>
                     <i class="fab fa-adn"></i>
-                    <p class="">Nous sommes une start-up sociale qui réduit les inégalités de genre et de territoire en répondant aux besoin de formation au numérique des femmes issues de quartiers prioritaires de la ville. </p>
+                    <p class="">Notre souhait : reduire les inégalités de genre et de territoire en répondant aux besoins de formation au numérique des femmes issues de quartiers populaires.</p>
                 </div>
             </header>
         </div>
         <div class="row">
             <div class="col m8 offset-m2 center-align">
-                <h2>DesCodeuses: Formation au numérique pour toutes les femmes</h2>
+                <h2>Notre charte</h2>
             </div>
         </div>
         <div class="row">
             <div class="col m5 card offset-m1">
-                <h2>Vision</h2>
-                <p class="content">Toutes les femmes indépendamment de leur origine social sociale peuvent accéder aux métiers qui définissent le monde de demain. </p>
+                <h2>Notre vision</h2>
+                <p class="content">Les femmes, quelque soit leur millieu d'origine, sont présentes dans les métiers qui conçoivent le monde numérique actuel et celui de demain.</p>
             </div>
             <div class="col m5 card">
-                <h2>Missions</h2>
-                <p class="content">Développer le pouvoir d'agir des femmes des quartiers prioritaires en les outillant, en les formant, en les accompagnant vers les métiers valorisés du numérique. </p>
+                <h2>Notre Mission</h2>
+                <p class="content">Informer, sensibiliser, développer le pouvoir d'agir des femmes des quartiers prioritaires en les outillant, en les formant, en les accompagnant vers les métiers valorisés du numérique.</p>
+            </div>
+            <div class="col m6 card offset-m3">
+                <h2>Notre methode</h2>
+                <p class="content">Empowerment et apprentissage collectif.</p>
             </div>
         </div>
         <div class="row left-align">
@@ -227,4 +231,5 @@ img {
 .action {
     list-style: disc
 }
+
 </style>

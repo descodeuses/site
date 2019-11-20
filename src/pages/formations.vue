@@ -11,20 +11,20 @@ export default {
     <div>
         <div class="row">
             <header class="header-page">
-                <h2 class="heading">Pédagogie</h2>
+                <h2 class="heading">La formation Developpeuse WEB</h2>
             </header>
         </div>
         <div class="row">
             <div class="col m4 offset-m2 left-align">
-                <h2 class="subheading">Equipe pédagogique</h2>
+                <h2 class="subheading">Notre équipe pédagogique</h2>
                 <p>Notre équipe pédagogique est formée de professionnels du développement web.</p>
-                <p>4 formateurs assureront pendant 6 mois les cours auprès des apprenantes.</p>
+                <p>Des formatrices et formateurs au service des stagiaires.</p>
             </div>
             <div class="col m4 left-align">
-                <h2 class="subheading">Contenu de la formation</h2>
-                <p>Nous lançons notre première formation longue en Novembre 2019.</p>
-                <p>Cette formation est <strong>gratuite</strong> et forme au métier de web développeuse.</p>
-                <a href="frontend">Voici le contenu de la formation</a>
+                <h2 class="subheading">Notre programme detaillé</h2>
+                <p>La premiere formation demarre le 3 fevrier 2020.</p>
+                <p>cette formation est financee grace a nos partenaires Paris code et pôle emploi.</p>
+                <a href="frontend">Voici le contenu de la formation.</a>
             </div>
         </div>
         <div class="row">

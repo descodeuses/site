@@ -6,7 +6,7 @@
                     <h2 class="white-text">initier</h2>
                 </div>
                 <div class="left-align">
-                    <p class="bold">Nous proposons des ateliers d'initiation à la programmation et des ateliers de sensibilisation aux opportunités de la Tech : </p>
+                    <p class="bold">Nous proposons des ateliers d'initiation à la programmation et des ateliers de sensibilisation aux opportunites de la Tech : </p>
                     <ul class="left-align">
                         <li><i class="material-icons">alarm</i>Découverte des métiers du numérique.</li>
                         <li><i class="material-icons">alarm</i>Création de votre première page web.</li>
@@ -19,7 +19,7 @@
                     <h2 class="white-text">former</h2>                    
                 </div>
                 <div class="left-align">
-                    <p class="bold">Nous formons pendant 6 mois au métier de développeuse front-end :</p>
+                    <p class="bold">Nous formons au métier de développeuse Web :</p>
                     <ul>
                         <li><i class="material-icons">code</i>Formez-vous aux compétences techniques front-end skills.</li>
                         <li><i class="material-icons">code</i>Formez-vous à la méthode agile.</li>
@@ -32,7 +32,7 @@
                     <h2 class="white-text">accompagner</h2>
                 </div>
                 <div class="left-align">
-                    <p class="bold">Nous accompagnons chaque apprenante vers l'emploi :</p>
+                    <p class="bold">Nous accompagnons chaque stagiaire vers l'emploi :</p>
                     <ul>
                         <li><i class="material-icons">work</i>En proposant des ateliers collectifs favorisant l'échange et le partage d'expérience </li>
                         <li><i class="material-icons">work</i>En faisant des ateliers et coaching individuels sur-mesure (définir son parcours professionnel, adapter sa recherche d'emploi, préparer un entretien…)</li>
