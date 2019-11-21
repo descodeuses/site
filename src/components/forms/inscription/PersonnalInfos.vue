@@ -353,10 +353,10 @@ export default {
         </div>
         <div class="center">
 			<BaseButton :func="goBack">
-				precendent
+				Précédent
 			</BaseButton>
 			<BaseButton :func="validate">
-				suivant
+				Suivant
 			</BaseButton>
 		</div>
     </div>
