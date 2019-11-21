@@ -18,7 +18,7 @@
         methods: {
             submit() {
                 this.$axios
-                .post('http://51.91.158.134:3000/newsletter/soubscribe', this.inscription)
+                .post('https://admin.descodeuses.org/newsletter/soubscribe', this.inscription)
                 .then(res => {
                     this.$refs.modal.open()
                     this.inscription.email = ""
