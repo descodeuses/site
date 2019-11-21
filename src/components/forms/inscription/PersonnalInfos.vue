@@ -174,7 +174,7 @@ export default {
                     </div>
                 </div>
                 <div class="row">
-                    <h2 class="">Statut au moment de votre candidature * <span class="help">(plusieur choix possible)</span></h2>
+                    <h2 class="">Statut au moment de votre candidature * <span class="help">(Plusieurs choix possibles)</span></h2>
                     <p class="help"></p>
                     <br>
                     <div class="row">
