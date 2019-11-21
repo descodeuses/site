@@ -365,8 +365,8 @@ export default {
 				</div>
 			</form>
 			<div class="center">
-				<BaseButton :func="goBack">precendent</BaseButton>
-				<BaseButton :func="validate">suivant</BaseButton>
+				<BaseButton :func="goBack">Précédent</BaseButton>
+				<BaseButton :func="validate">Suivant</BaseButton>
 			</div>
 		</div>
 	</div>
