@@ -63,7 +63,7 @@ export default {
                 </ol>
             </div>
             <div class="col m6">
-                <img src="@/assets/images/photos/descodeuses-femmes-codent 02.jpg" alt="">
+                <img src="@/assets/images/equipe/descodeuses-reunion.jpg" alt="">
             </div>
             <div class="col m4 offset-m1 left-align">
                
@@ -71,10 +71,10 @@ export default {
         </div>
         <h2 class="heading">L'équipe</h2>
         <div class="row">
-            <div class="col s12 m4">
+            <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/souad.jpg">
+                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
                         <p class="card-title">Souad <br>
                         <span>Cofondatrice / CEO</span>
                         </p>
@@ -88,10 +88,10 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/michelson.jpg">
+                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
                         <p class="card-title">Michelson <br>
                         <span>Cofondateur/CTO</span>
                         </p>
@@ -104,10 +104,10 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/azul.jpg">
+                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
                         <p class="card-title">Azul <br>
                         <span>Project Manager communication</span></p>
                     </div>
@@ -119,10 +119,10 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/olivier.jpg">
+                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
                         <p class="card-title">Olivier <br>
                         <span>Project Manager Partenariats</span></p>
                     </div>
@@ -134,10 +134,10 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/nolween.jpg">
+                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
                         <p class="card-title">Nolwenn <br>
                         <span>Project Manager Emploi</span></p>
                     </div>
@@ -149,10 +149,10 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/andrea.jpg">
+                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
                         <p class="card-title">Andrea<br>
                         <span>Responsable de la conception pédagogique</span></p>
                     </div>
@@ -176,9 +176,9 @@ h2 {
     color: #312A6B
 }
 header {
-    height: 70vh;
+    height: 90vh;
     padding: 50px 0;
-    background-image: url("./../assets/cover_decodeuses.png");
+    background-image: url("./../assets/images/equipe/descodeuses.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -201,7 +201,7 @@ ul li, ol li {
 .card-title {
     background: #f9b233;
     margin: 0 auto;
-    min-width: 363px;
+
 }
 .card-title span {
 font-size: 16px
@@ -224,9 +224,6 @@ font-size: 16px
     color: #0077B5 !important;
 }
 
-img {
-    width: 100%
-}
 
 .action {
     list-style: disc
