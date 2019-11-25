@@ -8,6 +8,7 @@ import contact from './pages/contact.vue'
 import aide from './pages/aide.vue'
 import accompagnement from './pages/accompagnement.vue'
 import developpeuseFrontend from './pages/frontend.vue'
+import mecenes from './pages/mecenes.vue'
 
 
 Vue.use(Router)
@@ -54,6 +55,12 @@ export default new Router({
                 path: '/frontend',
                 name: 'frontend',
                 component: developpeuseFrontend
+            }
+            ,
+            {
+                path: '/mecenes',
+                name: 'mecenes',
+                component: mecenes
             }
         ]
     })
