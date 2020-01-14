@@ -34,7 +34,7 @@ export default {
         <BannerPartners/>
         <BannerActions/>
         <!-- <Inscription @loadComponent="loadComponent" v-if="component === 'inscription'" /> -->
-        <div class="row cta">
+        <div class="row cta" id="newsletter">
             <div class="col m4 offset-m1 card">
                 <Newsletter/>
                 
