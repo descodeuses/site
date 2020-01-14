@@ -8,7 +8,7 @@ export default {
 }
 </script>
 <template>
-    <div>
+    <div id="page-formation">
         <div class="row">
             <header class="header-page">
                 <h2 class="heading">La formation Developpeuse WEB</h2>
@@ -35,7 +35,7 @@ export default {
         </div>
     </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 body {
   background: #e6e6e6;
   font-family: "Roboto", sans-serif;
@@ -61,6 +61,13 @@ h4 {
     font-weight: bold;
     text-transform: uppercase;
     color: #312A6B
+}
+@media only screen and (max-width: 600px) { 
+    #page-formation {
+        h2, h3, h4, p {
+            font-size: 100%
+        }
+    }
 }
 
 </style>
