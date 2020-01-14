@@ -22,16 +22,13 @@
             </div>
             <div class="col m6 left-align">
                 <h2 class="heading left-align">Entreprises</h2>
-                <p>Merci aux dons materiaux, et tous les sorts de soutient</p>
+                <p>Merci à tous nos soutiens, pour vos dons matériels et non matériels.</p>
                 <ul>
-                    <li> (pour les ordinateurs</li>
-                    <li>Evaneos (d'avoir preter vos locaux pour faire nos photos)</li>
+                    <li><a href="https://www.bain.com/fr/" target="_blank">Bain et Cie</a> pour les ordinateurs Lenovo</li>
+                    <li><a href="https://www.evaneos.fr/" target="_blank">Evaneos</a> pour la mise à disposition de vos locaux pour notre shooting photo</li>
                 </ul>
-
             </div>
-
         </div>
-        
     </div>
 </template>
 
