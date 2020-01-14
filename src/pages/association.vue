@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div id="page-aboutus">
         <router-view/>
         <div class="row">
             <header>
@@ -22,15 +22,15 @@ export default {
             </div>
         </div>
         <div class="row">
-            <div class="col m5 card offset-m1">
+            <div class="col m5 card offset-m1 s12">
                 <h2>Notre vision</h2>
                 <p class="content">Les femmes, quelque soit leur millieu d'origine, sont présentes dans les métiers qui conçoivent le monde numérique actuel et celui de demain.</p>
             </div>
-            <div class="col m5 card">
+            <div class="col m5 card s12">
                 <h2>Notre Mission</h2>
                 <p class="content">Informer, sensibiliser, développer le pouvoir d'agir des femmes des quartiers prioritaires en les outillant, en les formant, en les accompagnant vers les métiers valorisés du numérique.</p>
             </div>
-            <div class="col m6 card offset-m3">
+            <div class="col m6 card offset-m3 s12">
                 <h2>Notre methode</h2>
                 <p class="content">Empowerment et apprentissage collectif.</p>
             </div>
@@ -62,11 +62,8 @@ export default {
                     <li>Accès à des ateliers d'empowerment, de coaching, à des conférences avec des professionnels.</li>
                 </ol>
             </div>
-            <div class="col m6">
+            <div class="col m6 reunion">
                 <img src="@/assets/images/equipe/descodeuses-reunion.jpg" alt="">
-            </div>
-            <div class="col m4 offset-m1 left-align">
-               
             </div>
         </div>
         <h2 class="heading">L'équipe</h2>
@@ -74,7 +71,7 @@ export default {
             <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
+                        <img src="@/assets/images/equipe/souad.jpg">
                         <p class="card-title">Souad <br>
                         <span>Cofondatrice / CEO</span>
                         </p>
@@ -91,7 +88,7 @@ export default {
             <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
+                        <img src="@/assets/images/equipe/michelson.jpg">
                         <p class="card-title">Michelson <br>
                         <span>Cofondateur/CTO</span>
                         </p>
@@ -107,7 +104,37 @@ export default {
             <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
+                        <img src="@/assets/images/equipe/helene.jpg">
+                        <p class="card-title">Helene <br> 
+                        <span>Project Manager</span></p>
+                    </div>
+                    <div class="card-content">
+                        <p>Membre active, marketing de formation, impliquée d'une part car en reconversion professionnelle dans la Tech et développe des partenariats.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.linkedin.com/in/helenecouderc/" target="_blank">linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card left-align">
+                    <div class="card-image">
+                        <img src="@/assets/images/equipe/daniel-eric.jpg">
+                        <p class="card-title">Daniel-Eric<br>
+                        <span>Project manager/ formateur</span></p>
+                    </div>
+                    <div class="card-content">
+                        <p>Membre actif, ingénieur de formation, investi dans la cause descodeuses pour participer à la féminisation des métiers Tech.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.linkedin.com/in/daniel3ric/" target="_blank">linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card left-align">
+                    <div class="card-image">
+                        <img src="@/assets/images/equipe/azul.jpg">
                         <p class="card-title">Azul <br>
                         <span>Project Manager communication</span></p>
                     </div>
@@ -122,12 +149,12 @@ export default {
             <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
+                        <img src="@/assets/images/equipe/olivier.jpg">
                         <p class="card-title">Olivier <br>
                         <span>Project Manager Partenariats</span></p>
                     </div>
                     <div class="card-content">
-                        <p>Je développe, gère et anime le parcours d'accompagnement à l'emploi personnalisé qui est à destination des femmes des quartiers prioritaires. Notre objectif est que chacune trouve un emploi site à la formation.</p>
+                        <p>Je développe, gère et anime le parcours d'accompagnement à l'emploi personnalisé qui est à destination des femmes des quartiers prioritaires. Notre objectif est que chacune trouve un emploi suite à la formation.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/olivier-acampora-878793ba" target="_blank">linkedin</a>
@@ -137,7 +164,7 @@ export default {
             <div class="col s12 m3">
                 <div class="card left-align">
                     <div class="card-image">
-                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
+                        <img src="@/assets/images/equipe/nolwenn.jpg">
                         <p class="card-title">Nolwenn <br>
                         <span>Project Manager Emploi</span></p>
                     </div>
@@ -146,21 +173,6 @@ export default {
                     </div>
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/nolwenn-cariou-b9501256" target="_blank">linkedin</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card left-align">
-                    <div class="card-image">
-                        <img src="@/assets/images/equipe/souad-boutegrabet-descodeuses.jpg">
-                        <p class="card-title">Andrea<br>
-                        <span>Responsable de la conception pédagogique</span></p>
-                    </div>
-                    <div class="card-content">
-                        <p>J’accompagne la création de contenus pédagogiques. Je m’occupe particulièrement de la conception et de l’animation des ateliers de vulgarisation et je développe la stratégie pédagogique du projet.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://www.linkedin.com/in/andrea-milligan-7381a56a/" target="_blank">linkedin</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +213,8 @@ ul li, ol li {
 .card-title {
     background: #f9b233;
     margin: 0 auto;
-
+    width: 100%;
+    padding: 0 5px !important
 }
 .card-title span {
 font-size: 16px
@@ -214,7 +227,7 @@ font-size: 16px
 }
 .card-content {
     padding-bottom: 1em;
-    min-height: 149px;
+    min-height: 193px;
 }
 .content {
     padding: 16px;
@@ -227,6 +240,23 @@ font-size: 16px
 
 .action {
     list-style: disc
+}
+
+.reunion img {
+    width: 100%
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-position: center;
+        padding: 0px 0;
+    }
+    h2 {
+        font-size: 100%
+    }
+    #page-aboutus {
+        font-size: 100%
+    }
 }
 
 </style>
