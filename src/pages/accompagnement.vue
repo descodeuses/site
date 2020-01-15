@@ -58,7 +58,14 @@ ul li {
     background-position: 100%
 }
 .card {
-    padding: 40px !important
+    padding: 40px;
 }
-
+@media only screen and (max-width: 600px) { 
+    h1, h2, h3, h4, p {
+        font-size: 100%
+    }
+    .coach {
+        padding: 0px 0;
+    }
+}
 </style>
