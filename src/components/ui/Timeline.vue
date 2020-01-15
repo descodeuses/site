@@ -2,7 +2,7 @@
 <div>
     <header>
 		<div class="container">
-			<h1 class="heading">Le parcours d'une descodeuse</h1>
+			<h2 class="white-text">Le parcours d'une descodeuse</h2>
 		</div>
 	</header>
 
@@ -326,7 +326,9 @@ header {
 		&:before {
 			left: 0;
 		}
-
+		h1, h2, h3, h4, p {
+			font-size: 100% !important;
+		}
 		.timeline-item {
 			.timeline-content {
 				width: 90%;
