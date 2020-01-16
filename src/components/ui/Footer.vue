@@ -8,14 +8,15 @@
                     <p>Numéro NDA :  11755929775.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <!-- <h5 class="white-text">Links</h5>
+                    <!-- <h5 class="white-text">Links</h5> -->
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Recrutement</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Dons</a></li>
+                        
+                        <li><a class="grey-text text-lighten-3" href="mecenes">Nos mécènes</a></li>
+                        <!-- <li><a class="grey-text text-lighten-3" href="#!">Dons</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Politique de confidentialité</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Mentions légales</a></li>
-                    </ul> -->
+                        <li><a class="grey-text text-lighten-3" href="#!">Mentions légales</a></li> -->
+                    </ul>
                 </div>
             </div>
         </div>
