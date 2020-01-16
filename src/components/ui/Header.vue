@@ -1,8 +1,10 @@
 <template>
     <header class="row">
-        <div class="col m4 offset-m8 col s8 offset-s2 offset-6">
+        <div class="col m4 offset-m8 col s10 offset-s1 offset-6">
             <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez de nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
-            <a class="waves-effect btn-large" href="inscription" data-target="inscription">Je postule</a>
+            <p class="white-text">Inscrivez-vous à notre newsletter pour être au courant de toutes les nouvelles.</p>
+            <a href="#newsletter" class="btn">inscription à la newsletter</a>
+            <!-- <a class="waves-effect btn-large" href="inscription" data-target="inscription">Je postule</a> -->
         </div>
     </header>
 </template>
@@ -17,7 +19,7 @@ header {
     filter: grayscale(30%);
 }
 h2 {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
     padding: 40px 16px;
 }
