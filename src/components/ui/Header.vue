@@ -1,5 +1,8 @@
 <template>
     <header class="row">
+        <figure>
+            <img src="@/assets/logos/picto_datadocke.jpg" alt="">
+        </figure>
         <div class="col m4 offset-m8 col s10 offset-s1 offset-6">
             <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez de nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
             <p class="white-text">Inscrivez-vous à notre newsletter pour être au courant de toutes les nouvelles.</p>
@@ -9,6 +12,10 @@
     </header>
 </template>
 <style scoped>
+figure {
+    position: absolute;
+    width: 200px;
+}
 header {
     height: 70vh;
     padding: 50px 0;
@@ -57,6 +64,15 @@ h2 {
         background-attachment: fixed;
         background-position-x: -200px;
         filter: grayscale(30%);
+    }
+    figure {
+        position: absolute;
+        width: 100px;
+        top: -30px;
+        right: -10px;
+    }
+    img {
+        width: 100px;
     }
 }
 </style>
