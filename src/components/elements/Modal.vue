@@ -23,7 +23,7 @@ export default {
     <div id="modal1" class="modal" ref="modal">
         <div class="modal-content">
             <h2 class="heading">{{ header }}</h2>
-            <p class="subheading">{{ subheader}}</p>
+            <p class="subheading center">{{ subheader}}</p>
             <slot></slot>
         </div>
         <div class="modal-footer">
