@@ -37,7 +37,7 @@
 <template>
     <div> 
         <Modal
-        :header="'Email enregistrer'"
+        :header="'Email enregistré'"
         :subheader="'Merci pour votre confiance'"
         :validate="clean"
         ref="modal"
