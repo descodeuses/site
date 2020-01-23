@@ -57,4 +57,10 @@ export default {
 .uppercase {
     text-transform: uppercase
 }
+
+@media only screen and (max-width: 600px) { 
+    body {
+        font-size: 100%
+    }
+}
 </style>
