@@ -12,6 +12,7 @@
                     <ul>
                         
                         <li><a class="grey-text text-lighten-3" href="mecenes">Nos mécènes</a></li>
+                        <li><a href="https://drive.google.com/a/descodeuses.org/file/d/1JDABYj8RQyEMOjS6uf94OYEfbyPX4Yg6/view?usp=sharing" target="_blank">Rapport moral et financier 2019</a></li>
                         <!-- <li><a class="grey-text text-lighten-3" href="#!">Dons</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Politique de confidentialité</a></li>
