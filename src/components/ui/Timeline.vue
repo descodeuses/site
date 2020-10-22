@@ -13,7 +13,7 @@
                 </div>
 				<div class="timeline-content">
 					<h2>Pré-selection</h2>
-					<p>Démarrage de la formation gratuite d'initiation à la programmation.</p>
+					<p>Démarrage des réunions d'informations collective et des ateliers d'initiation à la programmation.</p>
 				</div>
 			</div>
 
@@ -22,7 +22,7 @@
 				</div>
 				<div class="timeline-content right">
 					<h2>Formation</h2>
-					<p>Démarrage du parcours pendant 6 mois, rythme intensif avec self-learning et projets collectifs.</p>
+					<p>Démarrage du parcours pendant 11,5 mois, rythme intensif en blended-learning et projets collectifs.</p>
 				</div>
 			</div>
 
@@ -35,7 +35,7 @@
 					<p>Tout au long du parcours, les apprenantes et les mentors travaillent ensemble à l'élaboration de projets.</p>
                 </div>
 			</div>
-			
+
 			<div class="timeline-item">
 				<div class="timeline-icon">
 				</div>
@@ -44,7 +44,7 @@
 					<p>Intégration dans les entreprises Tech pour un stage et validation des acquis</p>
 				</div>
 			</div>
-			
+
 			<div class="timeline-item">
 				<div class="timeline-icon">
 				</div>
@@ -65,7 +65,7 @@
 		</div>
 	</div>
 </div>
-    
+
 </template>
 
 <style lang="scss" scoped>
