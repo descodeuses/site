@@ -48,35 +48,30 @@ export default {
 		<div class="row left-align">
 			<Loader v-if="loading" />
 			<h2>Pré-requis obligatoires :</h2>
-			<p>Pour évaluer votre motivation, nous allons regarder que vous avez terminé les parcours que nous vous conseillons sur OPC. Voici comment faire :</p>
+			<p>Pour évaluer votre motivation, nous devons vérifier le nombre de points que vous avez obtenus sur la plateforme (40 points minimum sont requis)<strong>freeCodeCamp</strong>.</p>
 			<ol>
 				<li>
 					Rendez-vous sur
-					<a href="https://openclassrooms.com/fr/" target="_blank">Openclassroom</a>
+					<a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
 				</li>
 				<li>
-					Inscrivez-vous, la formule solo est gratuite pour les demandeuses d’emploi, il suffit simplement de leur envoyer votre numéro d’Allocataire après crée votre compte.
-					<a
-						href="https://openclassrooms.com/fr/partners/pole-emploi/offers"
-						target="_blank"
-					>Voici le lien</a>
+					Inscrivez-vous, créez un profil et réglez-le en mode public.
 				</li>
-				<li>Choisissez le parcours ‘’apprenez et créez votre site WEB avec HTML5 et CSS3’’</li>
 			</ol>
 		</div>
 		<div class="row">
 			<form v-on:submit.prevent v-on:submit="validate()">
-				<div class="row">
-					<div class="input-field col s12 left-align">
-						<h2>Vous avez un Github ?</h2>
-						<input
-							type="text"
-							v-model="motivation.github"
-							name="github"
-							placeholder="ex. https://github.com/descodeuses"
-							id="github"
-						/>
-					</div>
+					<div class="row">
+						<div class="input-field col s12 left-align">
+							<h2>Indiquez le lien de votre profil freeCodeCamp :</h2>
+							<input
+								type="text"
+								v-model="motivation.github"
+								name="github"
+								placeholder="ex. https://www.freecodecamp.org/bob"
+								id="freeCodeCamp"
+							/>
+						</div>
 				</div>
 				<div class="row left-align">
 					<h2>Racontez-nous une situation personnelle ou professionnelle durant laquelle vous avez surmonté un obstacle et de quelle manière ?</h2>
@@ -182,7 +177,7 @@ export default {
 					</div>
 					<div class="col m4 s6 left-align">
 						<h2>Votre CV <br><span class="help">(uniquement en pdf)</span></h2>
-						
+
 						<div class="file">
 							<label class="file-label">
 								<input
