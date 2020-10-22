@@ -4,7 +4,7 @@ export default {
     components: {
         Timeline
     }
-    
+
 }
 </script>
 <template>
@@ -22,13 +22,13 @@ export default {
             </div>
             <div class="col m4 left-align">
                 <h2 class="subheading">Notre programme detaillé</h2>
-                <p>La premiere formation demarre le 3 fevrier 2020.</p>
-                <p>cette formation est financee grace a nos partenaires Paris code et pôle emploi.</p>
+                <p>Les prochaines sessions de formation démarrent le 18 janvier 2021.</p>
+                <p>Ces formations sont financées grâce a nos partenaires Paris code et pôle emploi.</p>
                 <a href="frontend">Voici le contenu de la formation.</a>
             </div>
         </div>
         <div class="row">
-            
+
         </div>
         <div>
             <Timeline/>
@@ -62,7 +62,7 @@ h4 {
     text-transform: uppercase;
     color: #312A6B
 }
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
     #page-formation {
         h2, h3, h4, p {
             font-size: 100%
