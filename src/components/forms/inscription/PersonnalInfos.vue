@@ -191,18 +191,7 @@ export default {
                                     <span>Élève ou étudiant·e</span>
                                 </label>
                             </div>
-                            <div class="field ">
-                                <label for="employed">
-                                    <input
-                                        v-model="administration_infos.statut.employed"
-                                        value="employed"
-                                        name="administration_infos"
-                                        id="employed"
-                                        type="checkbox"
-                                        class=""/>
-                                    <span>Salarié·e</span>
-                                </label>
-                            </div>
+
                             <div class="field ">
                                 <label :class="{active: administration_infos.unployed}" for="unployed" class="checkbox">
                                     <input
