@@ -1,8 +1,5 @@
 <template>
     <header class="row">
-        <figure>
-            <img src="@/assets/logos/picto_datadocke.jpg" alt="">
-        </figure>
         <div class="col m4 offset-m8 col s10 offset-s1 offset-6">
             <h2 class="white-text left-align">Formez-vous au <span class="yellowdeuse">numérique</span> et saisissez de nouvelles <span class="yellowdeuse">opportunités</span> d'emploi.</h2>
             <p class="white-text">Inscrivez-vous à notre newsletter pour être au courant de toutes les nouvelles.</p>
