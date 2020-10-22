@@ -4,7 +4,7 @@
     <header class="header-page">
       <div class="row">
         <h1 class="heading">Programme de formation</h1>
-        <h2 class="subheading">Développeuse web front-end</h2>
+        <h2 class="subheading">Développeuse web</h2>
       </div>
     </header>
     <div class="row">
@@ -21,7 +21,7 @@
         </ul>
       </div>
       <div class="col m6 left-align">
-        <h4>Les qualités et les compétences requises </h4>
+        <h4>Les qualités et les compétences requises</h4>
         <p>Les qualités requises pour être développeuse web s’expriment à travers le savoir-faire technique et la compréhension des projets.</p>
         <p>En prenant en compte les différentes contraintes du projet (budget, délais), la développeuse doit respecter les étapes de la conception et de développement du site : techniques de conception, langages, framework, normes et procédures de sécurité.</p>
         <p>Pour ce faire, la développeuse web doit être autonome, savoir chercher les informations (notamment sur les forums en ligne) et les erreurs (parfois pendant de longues heures), respecter les délais, s’adapter, travailler en groupe, être à l’écoute.</p>
@@ -32,7 +32,7 @@
       <div class="col">
         <h4>Organisation de la formation</h4>
         <h3>Le descriptif de la formation</h3>
-        <p>Notre formation de 11,5 mois, à destination de femmes ayant entre 18 et 40 ans, est axée sur un apprentissage par la pratique. Elle comprend deux grandes phases : </p>
+        <p>Notre formation de 11,5 mois, à destination de femmes ayant entre 18 et 45 ans, est axée sur un apprentissage par la pratique. Elle comprend deux grandes phases : </p>
         <ul>
           <li>5,5 mois en centre de formation</li>
           <li>6 mois en entreprise, à travers un stage</li>
@@ -44,7 +44,7 @@
     <p>Cette formation permet de développer des compétences sur certains langages, de la même manière que l’on apprend à parler anglais ou arabe : front-end (ce qui est visible sur un site web, ex : on voit son panier d’achats) et back-end (ce qui ne se voit pas, ex : on ne voit pas comment s’additionnent les produits dans son panier d’achats).</p>
     <p>Cette formation alterne des phases d'exercices en autonomie et des projets, fictifs ou réels, à réaliser à plusieurs.  Ces pratiques quotidiennes donnent la possibilité aux développeuses de se projeter dans leur futur métier.</p>
 
-    <h3>Les compétences et qualité visées</h3>
+    <h3>Les compétences et qualités visées</h3>
     <p>Plusieurs compétences sont visées et notamment la maîtrise : </p>
     <ul>
       <li>Des langages front end : HTML5, CSS3, Javascript</li>
@@ -279,8 +279,8 @@
     <h3>Le processus d’admission à la formation </h3>
 
     <ul>
-      <li>Compléter le formulaire en ligne sur notre site <a href="https://www.descodeuses.org/">DesCodeuses</a></li>
-      <li>Valider le parcours complet, soit 40 points, seule ou en collaboration avec d’autres candidates, sur le site internet de <a href="https://www.freecodecamp.org/"> FreeCodeCamp</a></li>
+      <li>Compléter le formulaire en ligne sur notre site <a href="https://www.descodeuses.org/inscription">DesCodeuses</a></li>
+      <li>Valider le parcours complet, soit 40 points minimum, seule ou en collaboration avec d’autres candidates, sur le site internet de <a href="https://www.freecodecamp.org/"> FreeCodeCamp</a></li>
       <li>Entretiens d’admission individuelles</li>
 
     </ul>
