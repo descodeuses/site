@@ -275,6 +275,8 @@
 
     <p>Enfin, être motivée et avoir un réel objectif d’obtenir un emploi dans un métier technique seront les clefs d’une formation réussie. </p>
 
+    <p>Toutes les formations de DesCodeuses sont accessibles aux personnes en situation de handicap.
+Les stagiaires en situation de handicap, s'ils ne disposent pas déjà du matériel leur permettant le suivi de la formation dans de bonnes conditions, doivent se rapprocher du référent handicap de DesCodeuses, Jean-Phillipe DENET <a href="mailto:handi@descodeuses.org">handi@descodeuses.org</a>, afin d'identifier les aménagements spécifiques et être accompagnés pour leur mise en place.</p>
 
     <h3>Le processus d’admission à la formation </h3>
 
