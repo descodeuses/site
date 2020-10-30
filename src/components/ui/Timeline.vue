@@ -1,9 +1,11 @@
 <template>
 <div>
     <header>
-		<div class="container">
-			<h2 class="white-text">Le parcours d'une descodeuse</h2>
-		</div>
+      <h2>Quelques chiffres :</h2>
+      <p>82,5 % des stagiaires satisfaite de la formation</p>
+      <p>90 % des stagiaires ont trouvés un stage à l'issue de la formation</p>
+      <p>+ de 700 heures de cours, exercices et projets réalisés pendant la formation</p>
+      <p>Ecriture de + de 100 000 lignes de code</p>
 	</header>
 
 	<div class="container">
@@ -201,8 +203,10 @@ header {
 			margin: 10px 5px;
 		}
 	}
+  h2, p{
+    color: white;
+  }
 }
-
 // Timeline
 #timeline {
 	width: 100%;
