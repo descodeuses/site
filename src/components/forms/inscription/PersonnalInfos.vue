@@ -246,7 +246,7 @@ export default {
                                             id="poleemploi_inscriptionnumber"
                                             type="text"
                                             class="validate"/>
-                                        <label :class="{active: administration_infos.statut.poleemploi_inscriptionnumber}" for="poleemploi_inscriptionnumber">Numéro Pôle Emploi
+                                        <label :class="{active: administration_infos.statut.poleemploi_inscriptionnumber}" for="poleemploi_inscriptionnumber">Numéro allocataire
                                     </label>
                                 </div>
                                 <div v-if="administration_infos.statut.allowance_poleemploi === true">
