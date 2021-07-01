@@ -12,6 +12,7 @@
                     <ul>
 
                         <li><a class="grey-text text-lighten-3" href="mecenes">Nos mécènes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="mailto:contact@descodeuses.org">contact@descodeuses.org</a></li>
                         <!-- <li><a class="grey-text text-lighten-3" href="#!">Dons</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Politique de confidentialité</a></li>
