@@ -1,0 +1,67 @@
+figure {
+  position: absolute;
+  width: 200px;
+}
+header {
+  height: 70vh;
+  padding: 50px 0;
+  background-image: url("/images/cover_decodeuses.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-attachment: fixed;
+  filter: grayscale(30%);
+}
+h2 {
+  font-size: 35px;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+.col {
+  height: 55vh;
+  background: #312783;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btn-large {
+  background: #F9B233;
+  font-weight: bold;
+}
+.yellowdeuse {
+  color: #F9B233
+}
+
+@media screen and (max-width: 640px) {
+  h2 {
+    font-size: 25px;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  header {
+    height: 70vh;
+    padding: 50px 0;
+    background-image: url("/images/cover_decodeuses.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: -200px;
+    filter: grayscale(30%);
+  }
+  figure {
+    position: absolute;
+    width: 100px;
+    top: -30px;
+    right: -10px;
+  }
+  img {
+    width: 100px;
+  }
+}
+
+footer {
+    background-color: #312A6B
+}
